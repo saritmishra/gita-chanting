@@ -1,0 +1,40 @@
+<div>
+  <!--   <h1>
+        Chapter: {{main.chapterId}}; Verse: {{main.verseId}}
+    </h1> -->
+    <div ng-controller="DropdownCtrl as dropdown" class="header-row">
+
+      <div class="btn-group" dropdown > <!-- is-open="status.isopen" -->
+        <button type="button" class="btn btn-warning dropdown-toggle"> <!-- ng-disabled="disabled" -->
+            {{ dropdown.selectedChapter}} <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li ng-repeat="chapterNbr in dropdown.chapters">
+            <a href="" ng-click="dropdown.setChapterSelection(chapterNbr)">{{ "Chapter " + chapterNbr }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="btn-group" dropdown > <!-- is-open="status.isopen" -->
+        <button type="button" class="btn btn-warning dropdown-toggle">
+            {{ dropdown.selectedVerse}} <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li ng-repeat="verseNbr in dropdown.verses">
+            <a href="" ng-click="dropdown.setVerseSelection(verseNbr)">{{ "Verse " + verseNbr }}</a>
+          </li>
+        </ul>
+      </div>
+
+    <button type="button" class="btn btn-warning dropdown-toggle" ng-click="dropdown.changeRoute()">Submit
+    </button>
+
+    </div>
+
+
+    <img ng-src="{{ main.verseText }}" alt="">
+    <audio loop="loop"  controls="controls"> <!-- autoplay="autoplay" -->
+      <!-- <source src="music.ogg" /> -->
+      <source src="{{ main.verseURL }}" />
+    </audio>
+</div>

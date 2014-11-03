@@ -1,0 +1,27 @@
+.container {
+  width: 1250px;
+}
+
+.header-row {
+    margin: 0 auto;
+    width: 330px;
+    /*color: #FFF1c0;*/
+    padding-top: 15px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+audio {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.red-background {
+    background-color: #e44229;
+}

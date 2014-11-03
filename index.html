@@ -1,0 +1,27 @@
+<!doctype html>
+<!-- To load this page, go to the project folder and run a http server using Python python -m SimpleHTTPServer -->
+<html lang="en" ng-app="learn2chant">
+<head>
+  <meta charset="utf-8">
+
+  <title>Learn Gita Chanting</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+
+  <div class="container-fluid red-background">
+    <ng-view/>
+  </div>
+
+  <script type="text/javascript" src="lib/angular.js"></script>
+  <script type="text/javascript" src="lib/angular-route.js"></script>
+  <script type="text/javascript" src="lib/ui-bootstrap-tpls-0.11.2.min.js"></script>
+  <script type="text/javascript" src="scripts/app.js"></script>
+  <script type="text/javascript" src="scripts/controllers/mainController.js"></script>
+  <script type="text/javascript" src="scripts/controllers/DropdownCtrl.js"></script>
+
+</body>
+</html>
