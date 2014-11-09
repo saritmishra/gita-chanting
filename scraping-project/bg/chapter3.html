@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang=en manifest="cache.manifest">
+<head>
+<meta charset=utf-8>
+<title>Srimad Bhagavad Gita</title>
+<meta name=description content="Srimad Bhagavad Gita with Sanskrit text, Roman transliteration and English translation.">
+<meta name=author content="Maharishi Veda Vyasa">
+<meta name=apple-mobile-web-app-capable content=yes />
+<meta name=apple-mobile-web-app-status-bar-style content=black-translucent />
+<meta property="og:url" content="http://svarma.tx0.org/gita/" />
+<meta property="og:image" content="http://svarma.tx0.org/gita/screenshot.png" />
+<meta property="og:title" content="Srimad Bhagavad Gita" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Presentation of Srimad Bhagavad Gita with chanting, Sanskrit text, Roman transliteration and English translation." />
+<meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel=stylesheet href=css/reveal.min.css>
+<link rel=stylesheet href=css/theme/serif.css id=theme>
+<link rel=stylesheet href=lib/css/zenburn.css>
+<link rel="shortcut icon" href="favicon.ico" />
+<!--[if lt IE 9]>
+<script src=lib/js/html5shiv.js></script>
+<![endif]-->
+</head>
+<body>
+<nav>
+<form name=nav style=display:inline>
+<strong>अध्यायः &nbsp;</strong>
+<select id=select_chapter name=select_chapter onchange=chapter_change() style=font-size:medium>
+<option value=1>1. अर्जुनविषादयोगः</option>
+<option value=2>2. साङ्ख्ययोगः</option>
+<option value=3>3. कर्मयोगः</option>
+<option value=4>4. ज्ञानकर्मसंन्यासयोगः</option>
+<option value=5>5. संन्यासयोगः</option>
+<option value=6>6. आत्मसंयमयोगः</option>
+<option value=7>7. ज्ञानविज्ञानयोगः</option>
+<option value=8>8. अक्षरब्रह्मयोगः</option>
+<option value=9>9. राजविद्याराजगुह्ययोगः</option>
+<option value=10>10. विभूतियोगः</option>
+<option value=11>11. विश्वरूपदर्शनयोगः</option>
+<option value=12>12. भक्तियोगः</option>
+<option value=13>13. क्षेत्रक्षेत्रज्ञविभागयोगः</option>
+<option value=14>14. गुणत्रयविभागयोगः</option>
+<option value=15>15. पुरुषोत्तमयोगः</option>
+<option value=16>16. दैवासुरसम्पद्विभागयोगः</option>
+<option value=17>17. श्रद्धात्रयविभागयोगः</option>
+<option value=18>18. मोक्षसंन्यासयोगः</option>
+</select>
+<strong>श्लोकः &nbsp;</strong>
+<select id=select_verse name=select_verse onchange=verse_change() style=font-size:medium></select>
+<div id=wait style=display:table;margin-right:auto;margin-left:auto>
+<br /><br /><br /><br /><br /><br />
+Please wait ...
+</div>
+</form>
+</nav>
+<div class=reveal>
+<div class=slides>
+<section id=link_chapter2></section>
+<section id=gita_3-1>
+<div id=gita_sa_3-1>
+<strong>
+अर्जुन उवाच |<br />
+ज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन |<br />
+तत्किं कर्मणि घोरे मां नियोजयसि केशव ||३-१||<br />
+</strong>
+</div>
+<div id=gita_tr_3-1>
+<em>
+arjuna uvāca .<br />
+jyāyasī cetkarmaṇaste matā buddhirjanārdana .<br />
+tatkiṃ karmaṇi ghore māṃ niyojayasi keśava ..3-1..<br />
+</em>
+</div>
+<div id=gita_en_3-1>
+Arjuna said:<br>
+1. If it be thought by you that 'knowledge' is superior to 'action, ' O Janardana, why then, do you, O Kashava, engage me in this terrible action?
+<br />
+</div>
+</section>
+<section id=gita_3-2>
+<div id=gita_sa_3-2>
+<strong>
+व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे |<br />
+तदेकं वद निश्चित्य येन श्रेयोऽहमाप्नुयाम् ||३-२||<br />
+</strong>
+</div>
+<div id=gita_tr_3-2>
+<em>
+vyāmiśreṇeva vākyena buddhiṃ mohayasīva me .<br />
+tadekaṃ vada niścitya yena śreyo.ahamāpnuyām ..3-2..<br />
+</em>
+</div>
+<div id=gita_en_3-2>
+2. With this apparently perplexing speech you confuse, as it were, my understanding; therefore, tell me that "one" way by which, I, for certain, may attain the Highest.
+<br />
+</div>
+</section>
+<section id=gita_3-3>
+<div id=gita_sa_3-3>
+<strong>
+श्रीभगवानुवाच |<br />
+लोकेऽस्मिन् द्विविधा निष्ठा पुरा प्रोक्ता मयानघ |<br />
+ज्ञानयोगेन साङ्ख्यानां कर्मयोगेन योगिनाम् ||३-३||<br />
+</strong>
+</div>
+<div id=gita_tr_3-3>
+<em>
+śrībhagavānuvāca .<br />
+loke.asmina dvividhā niṣṭhā purā proktā mayānagha .<br />
+jñānayogena sāṅkhyānāṃ karmayogena yoginām ..3-3..<br />
+</em>
+</div>
+<div id=gita_en_3-3>
+The Blessed Lord said :<br>
+3. In this world there is a two-fold path, as I said before, O sinless one; the 'Path-of-Knowledge' of the SANKHYANS and the 'Path-of-Action' of the YOGINS.
+<br />
+</div>
+</section>
+<section id=gita_3-4>
+<div id=gita_sa_3-4>
+<strong>
+न कर्मणामनारम्भान्नैष्कर्म्यं पुरुषोऽश्नुते |<br />
+न च संन्यसनादेव सिद्धिं समधिगच्छति ||३-४||<br />
+</strong>
+</div>
+<div id=gita_tr_3-4>
+<em>
+na karmaṇāmanārambhānnaiṣkarmyaṃ puruṣo.aśnute .<br />
+na ca saṃnyasanādeva siddhiṃ samadhigacchati ..3-4..<br />
+</em>
+</div>
+<div id=gita_en_3-4>
+4. Not by non-performance of actions does man reach 'actionlessness' ; nor by mere renunciation does he attain 'Perfection. '
+<br />
+</div>
+</section>
+<section id=gita_3-5>
+<div id=gita_sa_3-5>
+<strong>
+न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत् |<br />
+कार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः ||३-५||<br />
+</strong>
+</div>
+<div id=gita_tr_3-5>
+<em>
+na hi kaścitkṣaṇamapi jātu tiṣṭhatyakarmakṛt .<br />
+kāryate hyavaśaḥ karma sarvaḥ prakṛtijairguṇaiḥ ..3-5..<br />
+</em>
+</div>
+<div id=gita_en_3-5>
+5. Verily, none can ever remain, even for a moment, without performing action; for, everyone is made to act helplessly, indeed, by the qualities born of PRAKRITI.
+<br />
+</div>
+</section>
+<section id=gita_3-6>
+<div id=gita_sa_3-6>
+<strong>
+कर्मेन्द्रियाणि संयम्य य आस्ते मनसा स्मरन् |<br />
+इन्द्रियार्थान्विमूढात्मा मिथ्याचारः स उच्यते ||३-६||<br />
+</strong>
+</div>
+<div id=gita_tr_3-6>
+<em>
+karmendriyāṇi saṃyamya ya āste manasā smaran .<br />
+indriyārthānvimūḍhātmā mithyācāraḥ sa ucyate ..3-6..<br />
+</em>
+</div>
+<div id=gita_en_3-6>
+6. He who, restraining the organs-of-action, sits thinking in his mind of the sense-objects, he, of deluded understanding, is called a hypocrite.
+<br />
+</div>
+</section>
+<section id=gita_3-7>
+<div id=gita_sa_3-7>
+<strong>
+यस्त्विन्द्रियाणि मनसा नियम्यारभतेऽर्जुन |<br />
+कर्मेन्द्रियैः कर्मयोगमसक्तः स विशिष्यते ||३-७||<br />
+</strong>
+</div>
+<div id=gita_tr_3-7>
+<em>
+yastvindriyāṇi manasā niyamyārabhate.arjuna .<br />
+karmendriyaiḥ karmayogamasaktaḥ sa viśiṣyate ..3-7..<br />
+</em>
+</div>
+<div id=gita_en_3-7>
+7. But, whosoever, controlling the senses by the mind, O Arjuna, engages his organs-of-action in KARMA YOGA, without attachment, he excels.
+<br />
+</div>
+</section>
+<section id=gita_3-8>
+<div id=gita_sa_3-8>
+<strong>
+नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः |<br />
+शरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः ||३-८||<br />
+</strong>
+</div>
+<div id=gita_tr_3-8>
+<em>
+niyataṃ kuru karma tvaṃ karma jyāyo hyakarmaṇaḥ .<br />
+śarīrayātrāpi ca te na prasiddhyedakarmaṇaḥ ..3-8..<br />
+</em>
+</div>
+<div id=gita_en_3-8>
+8. You perform (your) bounden duty; for, action is superior to inaction. Even the maintenance of the body would not be possible for you by inaction.
+<br />
+</div>
+</section>
+<section id=gita_3-9>
+<div id=gita_sa_3-9>
+<strong>
+यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः |<br />
+तदर्थं कर्म कौन्तेय मुक्तसङ्गः समाचर ||३-९||<br />
+</strong>
+</div>
+<div id=gita_tr_3-9>
+<em>
+yajñārthātkarmaṇo.anyatra loko.ayaṃ karmabandhanaḥ .<br />
+tadarthaṃ karma kaunteya muktasaṅgaḥ samācara ..3-9..<br />
+</em>
+</div>
+<div id=gita_en_3-9>
+9. The World is bound by action other than those performed 'for the sake of sacrifice' ; do thou, therefore, O son of Kunti, perform action of that sake (for YAJNA ) alone, free from all attachments.
+<br />
+</div>
+</section>
+<section id=gita_3-10>
+<div id=gita_sa_3-10>
+<strong>
+सहयज्ञाः प्रजाः सृष्ट्वा पुरोवाच प्रजापतिः |<br />
+अनेन प्रसविष्यध्वमेष वोऽस्त्विष्टकामधुक् ||३-१०||<br />
+</strong>
+</div>
+<div id=gita_tr_3-10>
+<em>
+sahayajñāḥ prajāḥ sṛṣṭvā purovāca prajāpatiḥ .<br />
+anena prasaviṣyadhvameṣa vo.astviṣṭakāmadhuk ..3-10..<br />
+</em>
+</div>
+<div id=gita_en_3-10>
+10. The PRAJAPATI (the Creator) , having in the beginning (of creation) created mankind, together with sacrifices, said, "by this shall you prosper; let this be the milch-cow of your desire --- "KAMADHUK" (the mythological cow which yields all desired objects) .
+<br />
+</div>
+</section>
+<section id=gita_3-11>
+<div id=gita_sa_3-11>
+<strong>
+देवान्भावयतानेन ते देवा भावयन्तु वः |<br />
+परस्परं भावयन्तः श्रेयः परमवाप्स्यथ ||३-११||<br />
+</strong>
+</div>
+<div id=gita_tr_3-11>
+<em>
+devānbhāvayatānena te devā bhāvayantu vaḥ .<br />
+parasparaṃ bhāvayantaḥ śreyaḥ paramavāpsyatha ..3-11..<br />
+</em>
+</div>
+<div id=gita_en_3-11>
+11. With this, you do nourish the gods and may those DEVAS nourish you; thus nourishing one another, you shall, attain the Highest Good.
+<br />
+</div>
+</section>
+<section id=gita_3-12>
+<div id=gita_sa_3-12>
+<strong>
+इष्टान्भोगान्हि वो देवा दास्यन्ते यज्ञभाविताः |<br />
+तैर्दत्तानप्रदायैभ्यो यो भुङ्क्ते स्तेन एव सः ||३-१२||<br />
+</strong>
+</div>
+<div id=gita_tr_3-12>
+<em>
+iṣṭānbhogānhi vo devā dāsyante yajñabhāvitāḥ .<br />
+tairdattānapradāyaibhyo yo bhuṅkte stena eva saḥ ..3-12..<br />
+</em>
+</div>
+<div id=gita_en_3-12>
+12 "The DEVAS , nourished by the sacrifice, will give you the desired objects. " Indeed he who enjoys objects, given by the DEVAS , without offering (in return) to them, is verily a thief.
+<br />
+</div>
+</section>
+<section id=gita_3-13>
+<div id=gita_sa_3-13>
+<strong>
+यज्ञशिष्टाशिनः सन्तो मुच्यन्ते सर्वकिल्बिषैः |<br />
+भुञ्जते ते त्वघं पापा ये पचन्त्यात्मकारणात् ||३-१३||<br />
+</strong>
+</div>
+<div id=gita_tr_3-13>
+<em>
+yajñaśiṣṭāśinaḥ santo mucyante sarvakilbiṣaiḥ .<br />
+bhuñjate te tvaghaṃ pāpā ye pacantyātmakāraṇāt ..3-13..<br />
+</em>
+</div>
+<div id=gita_en_3-13>
+13. The righteous, who eat the "remnants of the sacrifices" are freed from all sins; but those sinful ones, who cook food (only) for their own sake, verily eat but sin.
+<br />
+</div>
+</section>
+<section id=gita_3-14>
+<div id=gita_sa_3-14>
+<strong>
+अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसम्भवः |<br />
+यज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः ||३-१४||<br />
+</strong>
+</div>
+<div id=gita_tr_3-14>
+<em>
+annādbhavanti bhūtāni parjanyādannasambhavaḥ .<br />
+yajñādbhavati parjanyo yajñaḥ karmasamudbhavaḥ ..3-14..<br />
+</em>
+</div>
+<div id=gita_en_3-14>
+14. From food come forth beings; from rain food is produced; from sacrifice arises rain, and sacrifice is born of action.
+<br />
+</div>
+</section>
+<section id=gita_3-15>
+<div id=gita_sa_3-15>
+<strong>
+कर्म ब्रह्मोद्भवं विद्धि ब्रह्माक्षरसमुद्भवम् |<br />
+तस्मात्सर्वगतं ब्रह्म नित्यं यज्ञे प्रतिष्ठितम् ||३-१५||<br />
+</strong>
+</div>
+<div id=gita_tr_3-15>
+<em>
+karma brahmodbhavaṃ viddhi brahmākṣarasamudbhavam .<br />
+tasmātsarvagataṃ brahma nityaṃ yajñe pratiṣṭhitam ..3-15..<br />
+</em>
+</div>
+<div id=gita_en_3-15>
+15. Know you that action comes from BRAHMAJI (the creator) and BRAHMAJI come from the Imperishable. Therefore, the all-pervading BRAHMAN (God-principle) ever rests in sacrifice .
+<br />
+</div>
+</section>
+<section id=gita_3-16>
+<div id=gita_sa_3-16>
+<strong>
+एवं प्रवर्तितं चक्रं नानुवर्तयतीह यः |<br />
+अघायुरिन्द्रियारामो मोघं पार्थ स जीवति ||३-१६||<br />
+</strong>
+</div>
+<div id=gita_tr_3-16>
+<em>
+evaṃ pravartitaṃ cakraṃ nānuvartayatīha yaḥ .<br />
+aghāyurindriyārāmo moghaṃ pārtha sa jīvati ..3-16..<br />
+</em>
+</div>
+<div id=gita_en_3-16>
+16. He who does not follow here the wheel thus set revolving, is of a sinful life, rejoicing in the senses. He lives in vain, O Son of Pritha.
+<br />
+</div>
+</section>
+<section id=gita_3-17>
+<div id=gita_sa_3-17>
+<strong>
+यस्त्वात्मरतिरेव स्यादात्मतृप्तश्च मानवः |<br />
+आत्मन्येव च सन्तुष्टस्तस्य कार्यं न विद्यते ||३-१७||<br />
+</strong>
+</div>
+<div id=gita_tr_3-17>
+<em>
+yastvātmaratireva syādātmatṛptaśca mānavaḥ .<br />
+ātmanyeva ca santuṣṭastasya kāryaṃ na vidyate ..3-17..<br />
+</em>
+</div>
+<div id=gita_en_3-17>
+17. But the man who rejoices only in the Self, who is satisfied with the Self, who is content in the Self alone, for Him verily there is nothing (more) to be done.
+<br />
+</div>
+</section>
+<section id=gita_3-18>
+<div id=gita_sa_3-18>
+<strong>
+नैव तस्य कृतेनार्थो नाकृतेनेह कश्चन |<br />
+न चास्य सर्वभूतेषु कश्चिदर्थव्यपाश्रयः ||३-१८||<br />
+</strong>
+</div>
+<div id=gita_tr_3-18>
+<em>
+naiva tasya kṛtenārtho nākṛteneha kaścana .<br />
+na cāsya sarvabhūteṣu kaścidarthavyapāśrayaḥ ..3-18..<br />
+</em>
+</div>
+<div id=gita_en_3-18>
+18. For him there is here no interest whatever in what is done, or what is not done; nor does he depend upon any being for any object.
+<br />
+</div>
+</section>
+<section id=gita_3-19>
+<div id=gita_sa_3-19>
+<strong>
+तस्मादसक्तः सततं कार्यं कर्म समाचर |<br />
+असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ||३-१९||<br />
+</strong>
+</div>
+<div id=gita_tr_3-19>
+<em>
+tasmādasaktaḥ satataṃ kāryaṃ karma samācara .<br />
+asakto hyācarankarma paramāpnoti pūruṣaḥ ..3-19..<br />
+</em>
+</div>
+<div id=gita_en_3-19>
+19. Therefore, always perform actions which should be done, without attachment; for, by performing action without attachment, man attains the Supreme.
+<br />
+</div>
+</section>
+<section id=gita_3-20>
+<div id=gita_sa_3-20>
+<strong>
+कर्मणैव हि संसिद्धिमास्थिता जनकादयः |<br />
+लोकसंग्रहमेवापि सम्पश्यन्कर्तुमर्हसि ||३-२०||<br />
+</strong>
+</div>
+<div id=gita_tr_3-20>
+<em>
+karmaṇaiva hi saṃsiddhimāsthitā janakādayaḥ .<br />
+lokasaṃgrahamevāpi sampaśyankartumarhasi ..3-20..<br />
+</em>
+</div>
+<div id=gita_en_3-20>
+20. Janaka and others attained Perfection verily by action only; even with a view to protecting the masses you should perform action.
+<br />
+</div>
+</section>
+<section id=gita_3-21>
+<div id=gita_sa_3-21>
+<strong>
+यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः |<br />
+स यत्प्रमाणं कुरुते लोकस्तदनुवर्तते ||३-२१||<br />
+</strong>
+</div>
+<div id=gita_tr_3-21>
+<em>
+yadyadācarati śreṣṭhastattadevetaro janaḥ .<br />
+sa yatpramāṇaṃ kurute lokastadanuvartate ..3-21..<br />
+</em>
+</div>
+<div id=gita_en_3-21>
+21. Whatever a great man does, that other men also do (imitate) ; whatever he sets up as the standard, that the world (people) follows.
+<br />
+</div>
+</section>
+<section id=gita_3-22>
+<div id=gita_sa_3-22>
+<strong>
+न मे पार्थास्ति कर्तव्यं त्रिषु लोकेषु किञ्चन |<br />
+नानवाप्तमवाप्तव्यं वर्त एव च कर्मणि ||३-२२||<br />
+</strong>
+</div>
+<div id=gita_tr_3-22>
+<em>
+na me pārthāsti kartavyaṃ triṣu lokeṣu kiñcana .<br />
+nānavāptamavāptavyaṃ varta eva ca karmaṇi ..3-22..<br />
+</em>
+</div>
+<div id=gita_en_3-22>
+22 There is nothing in the three worlds, O Partha, that has to be done by Me, nor is there anything unattained that should be attained by Me; yet, I engage Myself in action.
+<br />
+</div>
+</section>
+<section id=gita_3-23>
+<div id=gita_sa_3-23>
+<strong>
+यदि ह्यहं न वर्तेयं जातु कर्मण्यतन्द्रितः |<br />
+मम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः ||३-२३||<br />
+</strong>
+</div>
+<div id=gita_tr_3-23>
+<em>
+yadi hyahaṃ na varteyaṃ jātu karmaṇyatandritaḥ .<br />
+mama vartmānuvartante manuṣyāḥ pārtha sarvaśaḥ ..3-23..<br />
+</em>
+</div>
+<div id=gita_en_3-23>
+23. For, should I not ever engage Myself in action, without relaxation, men would in every way follow My Path, O son of Pritha.
+<br />
+</div>
+</section>
+<section id=gita_3-24>
+<div id=gita_sa_3-24>
+<strong>
+उत्सीदेयुरिमे लोका न कुर्यां कर्म चेदहम् |<br />
+सङ्करस्य च कर्ता स्यामुपहन्यामिमाः प्रजाः ||३-२४||<br />
+</strong>
+</div>
+<div id=gita_tr_3-24>
+<em>
+utsīdeyurime lokā na kuryāṃ karma cedaham .<br />
+saṅkarasya ca kartā syāmupahanyāmimāḥ prajāḥ ..3-24..<br />
+</em>
+</div>
+<div id=gita_en_3-24>
+24. These worlds would perish if I did not perform action; I would be the author of confusion of "castes, " and would destroy these beings.
+<br />
+</div>
+</section>
+<section id=gita_3-25>
+<div id=gita_sa_3-25>
+<strong>
+सक्ताः कर्मण्यविद्वांसो यथा कुर्वन्ति भारत |<br />
+कुर्याद्विद्वांस्तथासक्तश्चिकीर्षुर्लोकसंग्रहम् ||३-२५||<br />
+</strong>
+</div>
+<div id=gita_tr_3-25>
+<em>
+saktāḥ karmaṇyavidvāṃso yathā kurvanti bhārata .<br />
+kuryādvidvāṃstathāsaktaścikīrṣurlokasaṃgraham ..3-25..<br />
+</em>
+</div>
+<div id=gita_en_3-25>
+25. As the "ignorant" men act from attachment to action, O Bharata, so should the "wise" men act without attachment, wishing the welfare of the world.
+<br />
+</div>
+</section>
+<section id=gita_3-26>
+<div id=gita_sa_3-26>
+<strong>
+न बुद्धिभेदं जनयेदज्ञानां कर्मसङ्गिनाम् |<br />
+जोषयेत्सर्वकर्माणि विद्वान्युक्तः समाचरन् ||३-२६||<br />
+</strong>
+</div>
+<div id=gita_tr_3-26>
+<em>
+na buddhibhedaṃ janayedajñānāṃ karmasaṅginām .<br />
+joṣayetsarvakarmāṇi vidvānyuktaḥ samācaran ..3-26..<br />
+</em>
+</div>
+<div id=gita_en_3-26>
+26. Let no wise-man unsettle the minds of ignorant-people, who are attached to action; he should engage them in all actions, himself fulfilling them with devotion.
+<br />
+</div>
+</section>
+<section id=gita_3-27>
+<div id=gita_sa_3-27>
+<strong>
+प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः |<br />
+अहङ्कारविमूढात्मा कर्ताहमिति मन्यते ||३-२७||<br />
+</strong>
+</div>
+<div id=gita_tr_3-27>
+<em>
+prakṛteḥ kriyamāṇāni guṇaiḥ karmāṇi sarvaśaḥ .<br />
+ahaṅkāravimūḍhātmā kartāhamiti manyate ..3-27..<br />
+</em>
+</div>
+<div id=gita_en_3-27>
+27. All actions are performed, in all cases, merely by the Qualities-in-Nature (GUNAS ) . He whose mind is deluded by egoism, thinks "I am the doer. "
+<br />
+</div>
+</section>
+<section id=gita_3-28>
+<div id=gita_sa_3-28>
+<strong>
+तत्त्ववित्तु महाबाहो गुणकर्मविभागयोः |<br />
+गुणा गुणेषु वर्तन्त इति मत्वा न सज्जते ||३-२८||<br />
+</strong>
+</div>
+<div id=gita_tr_3-28>
+<em>
+tattvavittu mahābāho guṇakarmavibhāgayoḥ .<br />
+guṇā guṇeṣu vartanta iti matvā na sajjate ..3-28..<br />
+</em>
+</div>
+<div id=gita_en_3-28>
+28. But he --- who knows the Truth, O mighty-armed, about the divisions of the qualities and (their) functions, and he who knows that GUNAS -as-senses move amidst GUNAS -as-objects, is not attached.
+<br />
+</div>
+</section>
+<section id=gita_3-29>
+<div id=gita_sa_3-29>
+<strong>
+प्रकृतेर्गुणसम्मूढाः सज्जन्ते गुणकर्मसु |<br />
+तानकृत्स्नविदो मन्दान्कृत्स्नविन्न विचालयेत् ||३-२९||<br />
+</strong>
+</div>
+<div id=gita_tr_3-29>
+<em>
+prakṛterguṇasammūḍhāḥ sajjante guṇakarmasu .<br />
+tānakṛtsnavido mandānkṛtsnavinna vicālayet ..3-29..<br />
+</em>
+</div>
+<div id=gita_en_3-29>
+29. Those deluded by the qualities of nature, (GUNAS) , are attached to the functions of the qualities. The Man-of-Perfect-Knowledge should not unsettle the 'foolish, ' who are of imperfect knowledge.
+<br />
+</div>
+</section>
+<section id=gita_3-30>
+<div id=gita_sa_3-30>
+<strong>
+मयि सर्वाणि कर्माणि संन्यस्याध्यात्मचेतसा |<br />
+निराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः ||३-३०||<br />
+</strong>
+</div>
+<div id=gita_tr_3-30>
+<em>
+mayi sarvāṇi karmāṇi saṃnyasyādhyātmacetasā .<br />
+nirāśīrnirmamo bhūtvā yudhyasva vigatajvaraḥ ..3-30..<br />
+</em>
+</div>
+<div id=gita_en_3-30>
+30. Renouncing all actions in Me, with the mind centered on the Self, free from hope and egoism (ownership) , free from (mental) fever, (you) do fight!
+<br />
+</div>
+</section>
+<section id=gita_3-31>
+<div id=gita_sa_3-31>
+<strong>
+ये मे मतमिदं नित्यमनुतिष्ठन्ति मानवाः |<br />
+श्रद्धावन्तोऽनसूयन्तो मुच्यन्ते तेऽपि कर्मभिः ||३-३१||<br />
+</strong>
+</div>
+<div id=gita_tr_3-31>
+<em>
+ye me matamidaṃ nityamanutiṣṭhanti mānavāḥ .<br />
+śraddhāvanto.anasūyanto mucyante te.api karmabhiḥ ..3-31..<br />
+</em>
+</div>
+<div id=gita_en_3-31>
+31. Those men who constantly practise this teaching of Mine, full of faith and without cavilling, they too are freed from actions.
+<br />
+</div>
+</section>
+<section id=gita_3-32>
+<div id=gita_sa_3-32>
+<strong>
+ये त्वेतदभ्यसूयन्तो नानुतिष्ठन्ति मे मतम् |<br />
+सर्वज्ञानविमूढांस्तान्विद्धि नष्टानचेतसः ||३-३२||<br />
+</strong>
+</div>
+<div id=gita_tr_3-32>
+<em>
+ye tvetadabhyasūyanto nānutiṣṭhanti me matam .<br />
+sarvajñānavimūḍhāṃstānviddhi naṣṭānacetasaḥ ..3-32..<br />
+</em>
+</div>
+<div id=gita_en_3-32>
+32. But those who carp at My teaching and do not practice it, deluded in all knowledge, and devoid of discrimination, know them to be doomed to destruction.
+<br />
+</div>
+</section>
+<section id=gita_3-33>
+<div id=gita_sa_3-33>
+<strong>
+सदृशं चेष्टते स्वस्याः प्रकृतेर्ज्ञानवानपि |<br />
+प्रकृतिं यान्ति भूतानि निग्रहः किं करिष्यति ||३-३३||<br />
+</strong>
+</div>
+<div id=gita_tr_3-33>
+<em>
+sadṛśaṃ ceṣṭate svasyāḥ prakṛterjñānavānapi .<br />
+prakṛtiṃ yānti bhūtāni nigrahaḥ kiṃ kariṣyati ..3-33..<br />
+</em>
+</div>
+<div id=gita_en_3-33>
+33. Even a wise man acts in accordance with his own nature; beings will follow their own nature; what can restraint do?
+<br />
+</div>
+</section>
+<section id=gita_3-34>
+<div id=gita_sa_3-34>
+<strong>
+इन्द्रियस्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ |<br />
+तयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ ||३-३४||<br />
+</strong>
+</div>
+<div id=gita_tr_3-34>
+<em>
+indriyasyendriyasyārthe rāgadveṣau vyavasthitau .<br />
+tayorna vaśamāgacchettau hyasya paripanthinau ..3-34..<br />
+</em>
+</div>
+<div id=gita_en_3-34>
+34. Attachment and aversion for the objects of the senses abide in the senses; let none come under their sway; for they are his foes.
+<br />
+</div>
+</section>
+<section id=gita_3-35>
+<div id=gita_sa_3-35>
+<strong>
+श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् |<br />
+स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ||३-३५||<br />
+</strong>
+</div>
+<div id=gita_tr_3-35>
+<em>
+śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt .<br />
+svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ ..3-35..<br />
+</em>
+</div>
+<div id=gita_en_3-35>
+35. Better is one's own 'duty' , though devoid of merit, than the 'duty' of another well discharged. Better is death in one's own 'duty' ; the 'duty' of another is fraught with fear (is productive of positive danger) .
+<br />
+</div>
+</section>
+<section id=gita_3-36>
+<div id=gita_sa_3-36>
+<strong>
+अर्जुन उवाच |<br />
+अथ केन प्रयुक्तोऽयं पापं चरति पूरुषः |<br />
+अनिच्छन्नपि वार्ष्णेय बलादिव नियोजितः ||३-३६||<br />
+</strong>
+</div>
+<div id=gita_tr_3-36>
+<em>
+arjuna uvāca .<br />
+atha kena prayukto.ayaṃ pāpaṃ carati pūruṣaḥ .<br />
+anicchannapi vārṣṇeya balādiva niyojitaḥ ..3-36..<br />
+</em>
+</div>
+<div id=gita_en_3-36>
+Arjuna said:<br>
+36. But, by what impelled does man commit sin, though against his wishes, O Varshneya, constrained, as it were, by force?
+<br />
+</div>
+</section>
+<section id=gita_3-37>
+<div id=gita_sa_3-37>
+<strong>
+श्रीभगवानुवाच |<br />
+काम एष क्रोध एष रजोगुणसमुद्भवः |<br />
+महाशनो महापाप्मा विद्ध्येनमिह वैरिणम् ||३-३७||<br />
+</strong>
+</div>
+<div id=gita_tr_3-37>
+<em>
+śrībhagavānuvāca .<br />
+kāma eṣa krodha eṣa rajoguṇasamudbhavaḥ .<br />
+mahāśano mahāpāpmā viddhyenamiha vairiṇam ..3-37..<br />
+</em>
+</div>
+<div id=gita_en_3-37>
+The Blessed Lord Said:<br>
+37. It is desire, it is anger born of the "active, " all-devouring, all-sinful; know this as the foe here (in this world) .
+<br />
+</div>
+</section>
+<section id=gita_3-38>
+<div id=gita_sa_3-38>
+<strong>
+धूमेनाव्रियते वह्निर्यथादर्शो मलेन च |<br />
+यथोल्बेनावृतो गर्भस्तथा तेनेदमावृतम् ||३-३८||<br />
+</strong>
+</div>
+<div id=gita_tr_3-38>
+<em>
+dhūmenāvriyate vahniryathādarśo malena ca .<br />
+yatholbenāvṛto garbhastathā tenedamāvṛtam ..3-38..<br />
+</em>
+</div>
+<div id=gita_en_3-38>
+38. As fire is enveloped by smoke, as a mirror by dust, as an embryo by the womb, so this (wisdom) is enveloped by that (desire or anger) .
+<br />
+</div>
+</section>
+<section id=gita_3-39>
+<div id=gita_sa_3-39>
+<strong>
+आवृतं ज्ञानमेतेन ज्ञानिनो नित्यवैरिणा |<br />
+कामरूपेण कौन्तेय दुष्पूरेणानलेन च ||३-३९||<br />
+</strong>
+</div>
+<div id=gita_tr_3-39>
+<em>
+āvṛtaṃ jñānametena jñānino nityavairiṇā .<br />
+kāmarūpeṇa kaunteya duṣpūreṇānalena ca ..3-39..<br />
+</em>
+</div>
+<div id=gita_en_3-39>
+39. Enveloped, O Son of Kunti, is 'wisdom' by this constant enemy of the wise in the form of 'desire, ' which is difficult to be appeased, like fire.
+<br />
+</div>
+</section>
+<section id=gita_3-40>
+<div id=gita_sa_3-40>
+<strong>
+इन्द्रियाणि मनो बुद्धिरस्याधिष्ठानमुच्यते |<br />
+एतैर्विमोहयत्येष ज्ञानमावृत्य देहिनम् ||३-४०||<br />
+</strong>
+</div>
+<div id=gita_tr_3-40>
+<em>
+indriyāṇi mano buddhirasyādhiṣṭhānamucyate .<br />
+etairvimohayatyeṣa jñānamāvṛtya dehinam ..3-40..<br />
+</em>
+</div>
+<div id=gita_en_3-40>
+40. The senses, the mind, and the intellect are said to be its seat; through these, it deludes the embodied by veiling his wisdom.
+<br />
+</div>
+</section>
+<section id=gita_3-41>
+<div id=gita_sa_3-41>
+<strong>
+तस्मात्त्वमिन्द्रियाण्यादौ नियम्य भरतर्षभ |<br />
+पाप्मानं प्रजहि ह्येनं ज्ञानविज्ञाननाशनम् ||३-४१||<br />
+</strong>
+</div>
+<div id=gita_tr_3-41>
+<em>
+tasmāttvamindriyāṇyādau niyamya bharatarṣabha .<br />
+pāpmānaṃ prajahi hyenaṃ jñānavijñānanāśanam ..3-41..<br />
+</em>
+</div>
+<div id=gita_en_3-41>
+41. Therefore, O best of the Bharatas, controlling first the senses, kill this sinful thing, the destroyer of knowledge and wisdom.
+<br />
+</div>
+</section>
+<section id=gita_3-42>
+<div id=gita_sa_3-42>
+<strong>
+इन्द्रियाणि पराण्याहुरिन्द्रियेभ्यः परं मनः |<br />
+मनसस्तु परा बुद्धिर्यो बुद्धेः परतस्तु सः ||३-४२||<br />
+</strong>
+</div>
+<div id=gita_tr_3-42>
+<em>
+indriyāṇi parāṇyāhurindriyebhyaḥ paraṃ manaḥ .<br />
+manasastu parā buddhiryo buddheḥ paratastu saḥ ..3-42..<br />
+</em>
+</div>
+<div id=gita_en_3-42>
+42. They say that the senses are superior (to the body) ; superior to the senses is the mind; superior to the mind is the intellect; one who is even superior to the intellect is He, (the Atman ) .
+<br />
+</div>
+</section>
+<section id=gita_3-43>
+<div id=gita_sa_3-43>
+<strong>
+एवं बुद्धेः परं बुद्ध्वा संस्तभ्यात्मानमात्मना |<br />
+जहि शत्रुं महाबाहो कामरूपं दुरासदम् ||३-४३||<br />
+</strong>
+</div>
+<div id=gita_tr_3-43>
+<em>
+evaṃ buddheḥ paraṃ buddhvā saṃstabhyātmānamātmanā .<br />
+jahi śatruṃ mahābāho kāmarūpaṃ durāsadam ..3-43..<br />
+</em>
+</div>
+<div id=gita_en_3-43>
+43. Thus knowing Him, who is superior to intellect, and restraining the self by the Self, slay you, O mighty-armed, the enemy in the form of 'desire, ' no doubt hard indeed to conquer.
+<br />
+</div>
+</section>
+<section id=gita_3-44>
+<div id=gita_sa_3-44>
+<strong>
+ॐ तत्सदिति श्रीमद्भगवद्गीतासूपनिषत्सु<br />
+ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे<br />
+कर्मयोगो नाम तृतीयोऽध्यायः ||३||<br />
+</strong>
+</div>
+<div id=gita_tr_3-44>
+<em>
+OM tatsaditi śrīmadbhagavadgītāsūpaniṣatsu brahmavidyāyāṃ yogaśāstre śrīkṛṣṇārjunasaṃvāde karmayogo nāma tṛtīyo.adhyāyaḥ ..3-44..<br />
+</em>
+</div>
+<div id=gita_en_3-44>
+Thus in the UPANISHADS of the glorious Bhagawad Geeta, in the Science of the Eternal, in the Scripture of YOGA , in the dialogue between Sri Krishna and Arjuna, the third discourse ends entitled:<br>
+THE KARMA YOGA<br />
+</div>
+</section>
+<section id=link_chapter4></section>
+</div>
+</div>
+<footer>
+<form style=position:absolute;left:5px;bottom:5px;z-index:100>
+<small><strong>सं</strong></small>
+<input id=sa_visible type=button value=ON style=height:30px onclick=toggle(this) />
+<small>EN:</small>
+<input id=en_visible type=button value=ON style=height:30px onclick=toggle(this) />
+<small>TR:</small>
+<input id=tr_visible type=button value=ON style=height:30px onclick=toggle(this) />
+&nbsp;
+<small>AU:</small>
+<input id=au_audible type=button value=OFF style=height:30px onclick=toggle_audio(this) />
+&nbsp;
+<input id=previous_verse type=button value="<" style=width:25px;height:35px onclick=Reveal.left();this.blur() />
+<input id=next_verse type=button value=">" style=width:25px;height:35px onclick=Reveal.right();this.blur() />
+</form>
+</footer>
+<script src=cordova.js></script>
+<script src=lib/js/head.min.js></script>
+<script src=js/reveal.min.js></script>
+<script src=js/gita.js></script>
+<p id="chapter" hidden>3</p>
+</body>
+</html>

@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang=en manifest="cache.manifest">
+<head>
+<meta charset=utf-8>
+<title>Srimad Bhagavad Gita</title>
+<meta name=description content="Srimad Bhagavad Gita with Sanskrit text, Roman transliteration and English translation.">
+<meta name=author content="Maharishi Veda Vyasa">
+<meta name=apple-mobile-web-app-capable content=yes />
+<meta name=apple-mobile-web-app-status-bar-style content=black-translucent />
+<meta property="og:url" content="http://svarma.tx0.org/gita/" />
+<meta property="og:image" content="http://svarma.tx0.org/gita/screenshot.png" />
+<meta property="og:title" content="Srimad Bhagavad Gita" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Presentation of Srimad Bhagavad Gita with chanting, Sanskrit text, Roman transliteration and English translation." />
+<meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel=stylesheet href=css/reveal.min.css>
+<link rel=stylesheet href=css/theme/serif.css id=theme>
+<link rel=stylesheet href=lib/css/zenburn.css>
+<link rel="shortcut icon" href="favicon.ico" />
+<!--[if lt IE 9]>
+<script src=lib/js/html5shiv.js></script>
+<![endif]-->
+</head>
+<body>
+<nav>
+<form name=nav style=display:inline>
+<strong>अध्यायः &nbsp;</strong>
+<select id=select_chapter name=select_chapter onchange=chapter_change() style=font-size:medium>
+<option value=1>1. अर्जुनविषादयोगः</option>
+<option value=2>2. साङ्ख्ययोगः</option>
+<option value=3>3. कर्मयोगः</option>
+<option value=4>4. ज्ञानकर्मसंन्यासयोगः</option>
+<option value=5>5. संन्यासयोगः</option>
+<option value=6>6. आत्मसंयमयोगः</option>
+<option value=7>7. ज्ञानविज्ञानयोगः</option>
+<option value=8>8. अक्षरब्रह्मयोगः</option>
+<option value=9>9. राजविद्याराजगुह्ययोगः</option>
+<option value=10>10. विभूतियोगः</option>
+<option value=11>11. विश्वरूपदर्शनयोगः</option>
+<option value=12>12. भक्तियोगः</option>
+<option value=13>13. क्षेत्रक्षेत्रज्ञविभागयोगः</option>
+<option value=14>14. गुणत्रयविभागयोगः</option>
+<option value=15>15. पुरुषोत्तमयोगः</option>
+<option value=16>16. दैवासुरसम्पद्विभागयोगः</option>
+<option value=17>17. श्रद्धात्रयविभागयोगः</option>
+<option value=18>18. मोक्षसंन्यासयोगः</option>
+</select>
+<strong>श्लोकः &nbsp;</strong>
+<select id=select_verse name=select_verse onchange=verse_change() style=font-size:medium></select>
+<div id=wait style=display:table;margin-right:auto;margin-left:auto>
+<br /><br /><br /><br /><br /><br />
+Please wait ...
+</div>
+</form>
+</nav>
+<div class=reveal>
+<div class=slides>
+<section id=link_chapter12></section>
+<section id=gita_13-1>
+<div id=gita_sa_13-1>
+<strong>
+अर्जुन उवाच |<br />
+प्रकृतिं पुरुषं चैव क्षेत्रं क्षेत्रज्ञमेव च |<br />
+एतद्वेदितुमिच्छामि ज्ञानं ज्ञेयं च केशव ||१३-१||<br />
+</strong>
+</div>
+<div id=gita_tr_13-1>
+<em>
+arjuna uvāca .<br />
+prakṛtiṃ puruṣaṃ caiva kṣetraṃ kṣetrajñameva ca .<br />
+etadveditumicchāmi jñānaṃ jñeyaṃ ca keśava ..13-1..<br />
+</em>
+</div>
+<div id=gita_en_13-1>
+Arjuna said:<br>
+1. PRAKRITI (Matter) and PURUSHA (Spirit) , also the KSHETRA (the Field) and
+KSHETRAJNA (the Knower-of-the-Field) , Knowledge and that which ought to be
+known --- these, I wish to learn, O Keshava.
+<br />
+</div>
+</section>
+<section id=gita_13-2>
+<div id=gita_sa_13-2>
+<strong>
+श्रीभगवानुवाच |<br />
+इदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते |<br />
+एतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः ||१३-२||<br />
+</strong>
+</div>
+<div id=gita_tr_13-2>
+<em>
+śrībhagavānuvāca .<br />
+idaṃ śarīraṃ kaunteya kṣetramityabhidhīyate .<br />
+etadyo vetti taṃ prāhuḥ kṣetrajña iti tadvidaḥ ..13-2..<br />
+</em>
+</div>
+<div id=gita_en_13-2>
+The Blessed Lord said:<br>
+2. This body, O Kaunteya is called KSHETRA (the Field) and he who knows it is called
+KSHETRAJNA (the Knower-of-the-Field) by those who know them (KSHETRA and
+KSHETRAJNA) i. e. by the sages .
+<br />
+</div>
+</section>
+<section id=gita_13-3>
+<div id=gita_sa_13-3>
+<strong>
+क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत |<br />
+क्षेत्रक्षेत्रज्ञयोर्ज्ञानं यत्तज्ज्ञानं मतं मम ||१३-३||<br />
+</strong>
+</div>
+<div id=gita_tr_13-3>
+<em>
+kṣetrajñaṃ cāpi māṃ viddhi sarvakṣetreṣu bhārata .<br />
+kṣetrakṣetrajñayorjñānaṃ yattajjñānaṃ mataṃ mama ..13-3..<br />
+</em>
+</div>
+<div id=gita_en_13-3>
+3. Know Me as the "Knower-of-the-Field" in all "Fields, " O Bharata; Knowledge of the
+"Field" as also of the "knower-of-the-Field" is considered by Me to be My Knowledge.
+<br />
+</div>
+</section>
+<section id=gita_13-4>
+<div id=gita_sa_13-4>
+<strong>
+तत्क्षेत्रं यच्च यादृक्च यद्विकारि यतश्च यत् |<br />
+स च यो यत्प्रभावश्च तत्समासेन मे शृणु ||१३-४||<br />
+</strong>
+</div>
+<div id=gita_tr_13-4>
+<em>
+tatkṣetraṃ yacca yādṛkca yadvikāri yataśca yat .<br />
+sa ca yo yatprabhāvaśca tatsamāsena me śṛṇu ..13-4..<br />
+</em>
+</div>
+<div id=gita_en_13-4>
+4. What that Field is; of what nature it is; what are its modifications; whence it is; and
+also who He is; and what His powers are --- these hear from Me in brief.
+<br />
+</div>
+</section>
+<section id=gita_13-5>
+<div id=gita_sa_13-5>
+<strong>
+ऋषिभिर्बहुधा गीतं छन्दोभिर्विविधैः पृथक् |<br />
+ब्रह्मसूत्रपदैश्चैव हेतुमद्भिर्विनिश्चितैः ||१३-५||<br />
+</strong>
+</div>
+<div id=gita_tr_13-5>
+<em>
+ṛṣibhirbahudhā gītaṃ chandobhirvividhaiḥ pṛthak .<br />
+brahmasūtrapadaiścaiva hetumadbhirviniścitaiḥ ..13-5..<br />
+</em>
+</div>
+<div id=gita_en_13-5>
+5. RISHIS have sung (about the "Field" and the "Knower-of-the-Field" ) in many ways,
+in various distinctive chants and also in the suggestive words indicative of BRAHMAN,
+full of reason and decision.
+<br />
+</div>
+</section>
+<section id=gita_13-6>
+<div id=gita_sa_13-6>
+<strong>
+महाभूतान्यहंकारो बुद्धिरव्यक्तमेव च |<br />
+इन्द्रियाणि दशैकं च पञ्च चेन्द्रियगोचराः ||१३-६||<br />
+</strong>
+</div>
+<div id=gita_tr_13-6>
+<em>
+mahābhūtānyahaṃkāro buddhiravyaktameva ca .<br />
+indriyāṇi daśaikaṃ ca pañca cendriyagocarāḥ ..13-6..<br />
+</em>
+</div>
+<div id=gita_en_13-6>
+6. The great elements, egoism, intellect, and also the unmanifested (MOOLA-PRAKRITI)
+, the ten senses and the one (the mind) and the five objects-of-the-senses, . . .
+<br />
+</div>
+</section>
+<section id=gita_13-7>
+<div id=gita_sa_13-7>
+<strong>
+इच्छा द्वेषः सुखं दुःखं संघातश्चेतना धृतिः |<br />
+एतत्क्षेत्रं समासेन सविकारमुदाहृतम् ||१३-७||<br />
+</strong>
+</div>
+<div id=gita_tr_13-7>
+<em>
+icchā dveṣaḥ sukhaṃ duḥkhaṃ saṃghātaścetanā dhṛtiḥ .<br />
+etatkṣetraṃ samāsena savikāramudāhṛtam ..13-7..<br />
+</em>
+</div>
+<div id=gita_en_13-7>
+7. Desire, hatred, pleasure, pain, aggregate (body) , intelligence, fortitude --- this
+KSHETRA has been thus briefly described with its modifications.
+<br />
+</div>
+</section>
+<section id=gita_13-8>
+<div id=gita_sa_13-8>
+<strong>
+अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम् |<br />
+आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः ||१३-८||<br />
+</strong>
+</div>
+<div id=gita_tr_13-8>
+<em>
+amānitvamadambhitvamahiṃsā kṣāntirārjavam .<br />
+ācāryopāsanaṃ śaucaṃ sthairyamātmavinigrahaḥ ..13-8..<br />
+</em>
+</div>
+<div id=gita_en_13-8>
+8. Humility, unpretentiousness, non-injury, forgiveness, uprightness, service to the
+teacher, purity, steadfastness, self-control . . .
+<br />
+</div>
+</section>
+<section id=gita_13-9>
+<div id=gita_sa_13-9>
+<strong>
+इन्द्रियार्थेषु वैराग्यमनहंकार एव च |<br />
+जन्ममृत्युजराव्याधिदुःखदोषानुदर्शनम् ||१३-९||<br />
+</strong>
+</div>
+<div id=gita_tr_13-9>
+<em>
+indriyārtheṣu vairāgyamanahaṃkāra eva ca .<br />
+janmamṛtyujarāvyādhiduḥkhadoṣānudarśanam ..13-9..<br />
+</em>
+</div>
+<div id=gita_en_13-9>
+9. Indifference to the objects of the sense, and also absence of egoism, perception of (or
+reflection upon) evils in birth, death, old age, sickness and pain. . .
+<br />
+</div>
+</section>
+<section id=gita_13-10>
+<div id=gita_sa_13-10>
+<strong>
+असक्तिरनभिष्वङ्गः पुत्रदारगृहादिषु |<br />
+नित्यं च समचित्तत्वमिष्टानिष्टोपपत्तिषु ||१३-१०||<br />
+</strong>
+</div>
+<div id=gita_tr_13-10>
+<em>
+asaktiranabhiṣvaṅgaḥ putradāragṛhādiṣu .<br />
+nityaṃ ca samacittatvamiṣṭāniṣṭopapattiṣu ..13-10..<br />
+</em>
+</div>
+<div id=gita_en_13-10>
+10. Non-attachment; non-identification of Self with son, wife, home and the rest; and
+constant even-mindedness on the attainment of the desirable and the undesirable. . .
+<br />
+</div>
+</section>
+<section id=gita_13-11>
+<div id=gita_sa_13-11>
+<strong>
+मयि चानन्ययोगेन भक्तिरव्यभिचारिणी |<br />
+विविक्तदेशसेवित्वमरतिर्जनसंसदि ||१३-११||<br />
+</strong>
+</div>
+<div id=gita_tr_13-11>
+<em>
+mayi cānanyayogena bhaktiravyabhicāriṇī .<br />
+viviktadeśasevitvamaratirjanasaṃsadi ..13-11..<br />
+</em>
+</div>
+<div id=gita_en_13-11>
+11. Unswerving devotion unto Me by the YOGA of non-separation, resorting to solitary
+places, distaste for the society of men. . .
+<br />
+</div>
+</section>
+<section id=gita_13-12>
+<div id=gita_sa_13-12>
+<strong>
+अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम् |<br />
+एतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोऽन्यथा ||१३-१२||<br />
+</strong>
+</div>
+<div id=gita_tr_13-12>
+<em>
+adhyātmajñānanityatvaṃ tattvajñānārthadarśanam .<br />
+etajjñānamiti proktamajñānaṃ yadato.anyathā ..13-12..<br />
+</em>
+</div>
+<div id=gita_en_13-12>
+12. Constancy in Self-knowledge, perception of the end of true knowledge --- this is
+declared to be "knowledge, " and what is opposed to it is "ignorance. "
+<br />
+</div>
+</section>
+<section id=gita_13-13>
+<div id=gita_sa_13-13>
+<strong>
+ज्ञेयं यत्तत्प्रवक्ष्यामि यज्ज्ञात्वामृतमश्नुते |<br />
+अनादिमत्परं ब्रह्म न सत्तन्नासदुच्यते ||१३-१३||<br />
+</strong>
+</div>
+<div id=gita_tr_13-13>
+<em>
+jñeyaṃ yattatpravakṣyāmi yajjñātvāmṛtamaśnute .<br />
+anādi matparaṃ brahma na sattannāsaducyate ..13-13..<br />
+</em>
+</div>
+<div id=gita_en_13-13>
+13. I will declare that which has to be "known" knowing which one attains to
+Immortality --- the beginningless Supreme BRAHMAN, called neither being nor non-
+being.
+<br />
+</div>
+</section>
+<section id=gita_13-14>
+<div id=gita_sa_13-14>
+<strong>
+सर्वतः पाणिपादं तत्सर्वतोऽक्षिशिरोमुखम् |<br />
+सर्वतः श्रुतिमल्लोके सर्वमावृत्य तिष्ठति ||१३-१४||<br />
+</strong>
+</div>
+<div id=gita_tr_13-14>
+<em>
+sarvataḥ pāṇipādaṃ tatsarvato.akṣiśiromukham .<br />
+sarvataḥ śrutimalloke sarvamāvṛtya tiṣṭhati ..13-14..<br />
+</em>
+</div>
+<div id=gita_en_13-14>
+14. With hands and feet everywhere, with eyes, heads and mouths everywhere, with ears
+everywhere, He exists in the world, enveloping all.
+<br />
+</div>
+</section>
+<section id=gita_13-15>
+<div id=gita_sa_13-15>
+<strong>
+सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम् |<br />
+असक्तं सर्वभृच्चैव निर्गुणं गुणभोक्तृ च ||१३-१५||<br />
+</strong>
+</div>
+<div id=gita_tr_13-15>
+<em>
+sarvendriyaguṇābhāsaṃ sarvendriyavivarjitam .<br />
+asaktaṃ sarvabhṛccaiva nirguṇaṃ guṇabhoktṛ ca ..13-15..<br />
+</em>
+</div>
+<div id=gita_en_13-15>
+15. Shining by the functions of all the senses, yet without the senses; unattached, yet
+supporting all; devoid of qualities, yet their experiencer. . .
+<br />
+</div>
+</section>
+<section id=gita_13-16>
+<div id=gita_sa_13-16>
+<strong>
+बहिरन्तश्च भूतानामचरं चरमेव च |<br />
+सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत् ||१३-१६||<br />
+</strong>
+</div>
+<div id=gita_tr_13-16>
+<em>
+bahirantaśca bhūtānāmacaraṃ carameva ca .<br />
+sūkṣmatvāttadavijñeyaṃ dūrasthaṃ cāntike ca tat ..13-16..<br />
+</em>
+</div>
+<div id=gita_en_13-16>
+16. Without and within (all) beings, the 'unmoving' and also the 'moving' ; because of its
+subtlety unknowable; and near and far away --- is That.
+<br />
+</div>
+</section>
+<section id=gita_13-17>
+<div id=gita_sa_13-17>
+<strong>
+अविभक्तं च भूतेषु विभक्तमिव च स्थितम् |<br />
+भूतभर्तृ च तज्ज्ञेयं ग्रसिष्णु प्रभविष्णु च ||१३-१७||<br />
+</strong>
+</div>
+<div id=gita_tr_13-17>
+<em>
+avibhaktaṃ ca bhūteṣu vibhaktamiva ca sthitam .<br />
+bhūtabhartṛ ca tajjñeyaṃ grasiṣṇu prabhaviṣṇu ca ..13-17..<br />
+</em>
+</div>
+<div id=gita_en_13-17>
+17. And undivided, yet He exists as if divided in beings; That is to be known as the
+Supporter of Beings; He devours and He generates.
+<br />
+</div>
+</section>
+<section id=gita_13-18>
+<div id=gita_sa_13-18>
+<strong>
+ज्योतिषामपि तज्ज्योतिस्तमसः परमुच्यते |<br />
+ज्ञानं ज्ञेयं ज्ञानगम्यं हृदि सर्वस्य विष्ठितम् ||१३-१८||<br />
+</strong>
+</div>
+<div id=gita_tr_13-18>
+<em>
+jyotiṣāmapi tajjyotistamasaḥ paramucyate .<br />
+jñānaṃ jñeyaṃ jñānagamyaṃ hṛdi sarvasya viṣṭhitam ..13-18..<br />
+</em>
+</div>
+<div id=gita_en_13-18>
+18. That (BRAHMAN) , the Light-of-all lights, is said to be beyond darkness; (It is)
+Knowledge, the Object-of-Knowledge, seated in the hearts of all, to be reached by Knowledge.
+<br />
+</div>
+</section>
+<section id=gita_13-19>
+<div id=gita_sa_13-19>
+<strong>
+इति क्षेत्रं तथा ज्ञानं ज्ञेयं चोक्तं समासतः |<br />
+मद्भक्त एतद्विज्ञाय मद्भावायोपपद्यते ||१३-१९||<br />
+</strong>
+</div>
+<div id=gita_tr_13-19>
+<em>
+iti kṣetraṃ tathā jñānaṃ jñeyaṃ coktaṃ samāsataḥ .<br />
+madbhakta etadvijñāya madbhāvāyopapadyate ..13-19..<br />
+</em>
+</div>
+<div id=gita_en_13-19>
+19. Thus the Field, as well as the knowledge and the knowable have been briefly stated.
+Knowing this, My devotee enters into My Being.
+<br />
+</div>
+</section>
+<section id=gita_13-20>
+<div id=gita_sa_13-20>
+<strong>
+प्रकृतिं पुरुषं चैव विद्ध्यनादी उभावपि |<br />
+विकारांश्च गुणांश्चैव विद्धि प्रकृतिसम्भवान् ||१३-२०||<br />
+</strong>
+</div>
+<div id=gita_tr_13-20>
+<em>
+prakṛtiṃ puruṣaṃ caiva viddhyanādi ubhāvapi .<br />
+vikārāṃśca guṇāṃścaiva viddhi prakṛtisambhavān ..13-20..<br />
+</em>
+</div>
+<div id=gita_en_13-20>
+20. Know you that Matter (PRAKRITI) and Spirit (PURUSHA) are both beginningless;
+and know you also that all modifications and qualities are born of PRAKRITI.
+<br />
+</div>
+</section>
+<section id=gita_13-21>
+<div id=gita_sa_13-21>
+<strong>
+कार्यकारणकर्तृत्वे हेतुः प्रकृतिरुच्यते |<br />
+पुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते ||१३-२१||<br />
+</strong>
+</div>
+<div id=gita_tr_13-21>
+<em>
+kāryakāraṇakartṛtve hetuḥ prakṛtirucyate .<br />
+puruṣaḥ sukhaduḥkhānāṃ bhoktṛtve heturucyate ..13-21..<br />
+</em>
+</div>
+<div id=gita_en_13-21>
+21. In the production of the effect and the cause, PRAKRITI is said to be the cause; in the experience of pleasure and pain, PURUSHA is said to be the cause.
+<br />
+</div>
+</section>
+<section id=gita_13-22>
+<div id=gita_sa_13-22>
+<strong>
+पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान्गुणान् |<br />
+कारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु ||१३-२२||<br />
+</strong>
+</div>
+<div id=gita_tr_13-22>
+<em>
+puruṣaḥ prakṛtistho hi bhuṅkte prakṛtijānguṇān .<br />
+kāraṇaṃ guṇasaṅgo.asya sadasadyonijanmasu ..13-22..<br />
+</em>
+</div>
+<div id=gita_en_13-22>
+22. The PURUSHA, seated in PRAKRITI, experiences the qualities born of PRAKRITI;
+attachment to the qualities is the cause of his birth in good and evil wombs.
+<br />
+</div>
+</section>
+<section id=gita_13-23>
+<div id=gita_sa_13-23>
+<strong>
+उपद्रष्टानुमन्ता च भर्ता भोक्ता महेश्वरः |<br />
+परमात्मेति चाप्युक्तो देहेऽस्मिन्पुरुषः परः ||१३-२३||<br />
+</strong>
+</div>
+<div id=gita_tr_13-23>
+<em>
+upadraṣṭānumantā ca bhartā bhoktā maheśvaraḥ .<br />
+paramātmeti cāpyukto dehe.asminpuruṣaḥ paraḥ ..13-23..<br />
+</em>
+</div>
+<div id=gita_en_13-23>
+23. The supreme PURUSHA in this body is also called the Spectator, the Permitter, the
+Supporter, the Enjoyer, the great Lord and the Supreme Self.
+<br />
+</div>
+</section>
+<section id=gita_13-24>
+<div id=gita_sa_13-24>
+<strong>
+य एवं वेत्ति पुरुषं प्रकृतिं च गुणैः सह |<br />
+सर्वथा वर्तमानोऽपि न स भूयोऽभिजायते ||१३-२४||<br />
+</strong>
+</div>
+<div id=gita_tr_13-24>
+<em>
+ya evaṃ vetti puruṣaṃ prakṛtiṃ ca guṇaiḥ saha .<br />
+sarvathā vartamāno.api na sa bhūyo.abhijāyate ..13-24..<br />
+</em>
+</div>
+<div id=gita_en_13-24>
+24. He who thus knows the PURUSHA and PRAKRITI together with the qualities, in
+whatsoever condition he may be, he is not born again.
+<br />
+</div>
+</section>
+<section id=gita_13-25>
+<div id=gita_sa_13-25>
+<strong>
+ध्यानेनात्मनि पश्यन्ति केचिदात्मानमात्मना |<br />
+अन्ये साङ्ख्येन योगेन कर्मयोगेन चापरे ||१३-२५||<br />
+</strong>
+</div>
+<div id=gita_tr_13-25>
+<em>
+dhyānenātmani paśyanti kecidātmānamātmanā .<br />
+anye sāṅkhyena yogena karmayogena cāpare ..13-25..<br />
+</em>
+</div>
+<div id=gita_en_13-25>
+25. Some, by meditation, behold the Self in the Self by the Self; others by the "YOGA -of-
+Knowledge" (by SANKHYA YOGA) ; and others by KARMA YOGA.
+<br />
+</div>
+</section>
+<section id=gita_13-26>
+<div id=gita_sa_13-26>
+<strong>
+अन्ये त्वेवमजानन्तः श्रुत्वान्येभ्य उपासते |<br />
+तेऽपि चातितरन्त्येव मृत्युं श्रुतिपरायणाः ||१३-२६||<br />
+</strong>
+</div>
+<div id=gita_tr_13-26>
+<em>
+anye tvevamajānantaḥ śrutvānyebhya upāsate .<br />
+te.api cātitarantyeva mṛtyuṃ śrutiparāyaṇāḥ ..13-26..<br />
+</em>
+</div>
+<div id=gita_en_13-26>
+26. Others also, not knowing this, worship, having heard of it from others; they too, cross beyond death, if they would regard what they have heard as their Supreme Refuge.
+<br />
+</div>
+</section>
+<section id=gita_13-27>
+<div id=gita_sa_13-27>
+<strong>
+यावत्सञ्जायते किञ्चित्सत्त्वं स्थावरजङ्गमम् |<br />
+क्षेत्रक्षेत्रज्ञसंयोगात्तद्विद्धि भरतर्षभ ||१३-२७||<br />
+</strong>
+</div>
+<div id=gita_tr_13-27>
+<em>
+yāvatsañjāyate kiñcitsattvaṃ sthāvarajaṅgamam .<br />
+kṣetrakṣetrajñasaṃyogāttadviddhi bharatarṣabha ..13-27..<br />
+</em>
+</div>
+<div id=gita_en_13-27>
+27. Wherever any being is born, the unmoving or the moving, know you, O best of the
+Bharatas, that it is from the union between the "Field" and the "Knower-of-the-Field. "
+<br />
+</div>
+</section>
+<section id=gita_13-28>
+<div id=gita_sa_13-28>
+<strong>
+समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम् |<br />
+विनश्यत्स्वविनश्यन्तं यः पश्यति स पश्यति ||१३-२८||<br />
+</strong>
+</div>
+<div id=gita_tr_13-28>
+<em>
+samaṃ sarveṣu bhūteṣu tiṣṭhantaṃ parameśvaram .<br />
+vinaśyatsvavinaśyantaṃ yaḥ paśyati sa paśyati ..13-28..<br />
+</em>
+</div>
+<div id=gita_en_13-28>
+28. He sees, who sees the Supreme Lord existing equally in all beings, the unperishing
+within the perishing.
+<br />
+</div>
+</section>
+<section id=gita_13-29>
+<div id=gita_sa_13-29>
+<strong>
+समं पश्यन्हि सर्वत्र समवस्थितमीश्वरम् |<br />
+न हिनस्त्यात्मनात्मानं ततो याति परां गतिम् ||१३-२९||<br />
+</strong>
+</div>
+<div id=gita_tr_13-29>
+<em>
+samaṃ paśyanhi sarvatra samavasthitamīśvaram .<br />
+na hinastyātmanātmānaṃ tato yāti parāṃ gatim ..13-29..<br />
+</em>
+</div>
+<div id=gita_en_13-29>
+29. Indeed, he who sees the same Lord everywhere equally dwelling, destroys not the Self
+by the Self; therefore, he goes to the Highest Goal.
+<br />
+</div>
+</section>
+<section id=gita_13-30>
+<div id=gita_sa_13-30>
+<strong>
+प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः |<br />
+यः पश्यति तथात्मानमकर्तारं स पश्यति ||१३-३०||<br />
+</strong>
+</div>
+<div id=gita_tr_13-30>
+<em>
+prakṛtyaiva ca karmāṇi kriyamāṇāni sarvaśaḥ .<br />
+yaḥ paśyati tathātmānamakartāraṃ sa paśyati ..13-30..<br />
+</em>
+</div>
+<div id=gita_en_13-30>
+30. He sees, who sees that all actions are performed by PRAKRITI alone, and that the
+Self is actionless.
+<br />
+</div>
+</section>
+<section id=gita_13-31>
+<div id=gita_sa_13-31>
+<strong>
+यदा भूतपृथग्भावमेकस्थमनुपश्यति |<br />
+तत एव च विस्तारं ब्रह्म सम्पद्यते तदा ||१३-३१||<br />
+</strong>
+</div>
+<div id=gita_tr_13-31>
+<em>
+yadā bhūtapṛthagbhāvamekasthamanupaśyati .<br />
+tata eva ca vistāraṃ brahma sampadyate tadā ..13-31..<br />
+</em>
+</div>
+<div id=gita_en_13-31>
+31. When he (man) sees the whole variety-of-beings, as resting in the One, and spreading
+forth from That (One) alone, he then becomes BRAHMAN.
+<br />
+</div>
+</section>
+<section id=gita_13-32>
+<div id=gita_sa_13-32>
+<strong>
+अनादित्वान्निर्गुणत्वात्परमात्मायमव्ययः |<br />
+शरीरस्थोऽपि कौन्तेय न करोति न लिप्यते ||१३-३२||<br />
+</strong>
+</div>
+<div id=gita_tr_13-32>
+<em>
+anāditvānnirguṇatvātparamātmāyamavyayaḥ .<br />
+śarīrastho.api kaunteya na karoti na lipyate ..13-32..<br />
+</em>
+</div>
+<div id=gita_en_13-32>
+32. Being without beginning, and being devoid of qualities, the Supreme Self, the
+Imperishable, though dwelling in the body, O Kaunteya, neither acts, nor is tainted.
+<br />
+</div>
+</section>
+<section id=gita_13-33>
+<div id=gita_sa_13-33>
+<strong>
+यथा सर्वगतं सौक्ष्म्यादाकाशं नोपलिप्यते |<br />
+सर्वत्रावस्थितो देहे तथात्मा नोपलिप्यते ||१३-३३||<br />
+</strong>
+</div>
+<div id=gita_tr_13-33>
+<em>
+yathā sarvagataṃ saukṣmyādākāśaṃ nopalipyate .<br />
+sarvatrāvasthito dehe tathātmā nopalipyate ..13-33..<br />
+</em>
+</div>
+<div id=gita_en_13-33>
+33. As the all-pervading ether is not tainted, because of its subtlety, so too the Self, seated
+everywhere in the body, is not tainted.
+<br />
+</div>
+</section>
+<section id=gita_13-34>
+<div id=gita_sa_13-34>
+<strong>
+यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः |<br />
+क्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत ||१३-३४||<br />
+</strong>
+</div>
+<div id=gita_tr_13-34>
+<em>
+yathā prakāśayatyekaḥ kṛtsnaṃ lokamimaṃ raviḥ .<br />
+kṣetraṃ kṣetrī tathā kṛtsnaṃ prakāśayati bhārata ..13-34..<br />
+</em>
+</div>
+<div id=gita_en_13-34>
+34. Just as the one Sun illumines the whole world, so also the Lord-of-the-Field
+(PARAMATMAN) illumines the whole "Field, " O Bharata.
+<br />
+</div>
+</section>
+<section id=gita_13-35>
+<div id=gita_sa_13-35>
+<strong>
+क्षेत्रक्षेत्रज्ञयोरेवमन्तरं ज्ञानचक्षुषा |<br />
+भूतप्रकृतिमोक्षं च ये विदुर्यान्ति ते परम् ||१३-३५||<br />
+</strong>
+</div>
+<div id=gita_tr_13-35>
+<em>
+kṣetrakṣetrajñayorevamantaraṃ jñānacakṣuṣā .<br />
+bhūtaprakṛtimokṣaṃ ca ye viduryānti te param ..13-35..<br />
+</em>
+</div>
+<div id=gita_en_13-35>
+35. They who, with their eye-of-wisdom come to know the distinction between the "Field"
+and the "Knower-of-the-Field", and of the liberation from the "PRAKRITI" of the being, go to the Supreme.
+<br />
+</div>
+</section>
+<section id=gita_13-36>
+<div id=gita_sa_13-36>
+<strong>
+ॐ तत्सदिति श्रीमद्भगवद्गीतासूपनिषत्सु<br />
+ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे<br />
+क्षेत्रक्षेत्रज्ञविभागयोगो नाम त्रयोदशोऽध्यायः ||१३||<br />
+</strong>
+</div>
+<div id=gita_tr_13-36>
+<em>
+OM tatsaditi śrīmadbhagavadgītāsūpaniṣatsu brahmavidyāyāṃ yogaśāstre śrīkṛṣṇārjunasaṃvāde kṣetrakṣetrajñavibhāgayogo nāma trayodaśo.adhyāyaḥ ..13-36..<br />
+</em>
+</div>
+<div id=gita_en_13-36>
+Thus, in the UPANISHADS of the glorious Bhagawad-Geeta, in the Science of the
+Eternal, in the scripture of YOGA, in the dialogue between Sri Krishna and Arjuna, the
+thirteenth discourse ends entitled:<br>
+THE FIELD AND THE KNOWER-OF-THE-FIELD<br />
+</div>
+</section>
+<section id=link_chapter14></section>
+</div>
+</div>
+<footer>
+<form style=position:absolute;left:5px;bottom:5px;z-index:100>
+<small><strong>सं</strong></small>
+<input id=sa_visible type=button value=ON style=height:30px onclick=toggle(this) />
+<small>EN:</small>
+<input id=en_visible type=button value=ON style=height:30px onclick=toggle(this) />
+<small>TR:</small>
+<input id=tr_visible type=button value=ON style=height:30px onclick=toggle(this) />
+&nbsp;
+<small>AU:</small>
+<input id=au_audible type=button value=OFF style=height:30px onclick=toggle_audio(this) />
+&nbsp;
+<input id=previous_verse type=button value="<" style=width:25px;height:35px onclick=Reveal.left();this.blur() />
+<input id=next_verse type=button value=">" style=width:25px;height:35px onclick=Reveal.right();this.blur() />
+</form>
+</footer>
+<script src=cordova.js></script>
+<script src=lib/js/head.min.js></script>
+<script src=js/reveal.min.js></script>
+<script src=js/gita.js></script>
+<p id="chapter" hidden>13</p>
+</body>
+</html>

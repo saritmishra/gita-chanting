@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang=en manifest="cache.manifest">
+<head>
+<meta charset=utf-8>
+<title>Srimad Bhagavad Gita</title>
+<meta name=description content="Srimad Bhagavad Gita with Sanskrit text, Roman transliteration and English translation.">
+<meta name=author content="Maharishi Veda Vyasa">
+<meta name=apple-mobile-web-app-capable content=yes />
+<meta name=apple-mobile-web-app-status-bar-style content=black-translucent />
+<meta property="og:url" content="http://svarma.tx0.org/gita/" />
+<meta property="og:image" content="http://svarma.tx0.org/gita/screenshot.png" />
+<meta property="og:title" content="Srimad Bhagavad Gita" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Presentation of Srimad Bhagavad Gita with chanting, Sanskrit text, Roman transliteration and English translation." />
+<meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel=stylesheet href=css/reveal.min.css>
+<link rel=stylesheet href=css/theme/serif.css id=theme>
+<link rel=stylesheet href=lib/css/zenburn.css>
+<link rel="shortcut icon" href="favicon.ico" />
+<!--[if lt IE 9]>
+<script src=lib/js/html5shiv.js></script>
+<![endif]-->
+</head>
+<body>
+<nav>
+<form name=nav style=display:inline>
+<strong>अध्यायः &nbsp;</strong>
+<select id=select_chapter name=select_chapter onchange=chapter_change() style=font-size:medium>
+<option value=1>1. अर्जुनविषादयोगः</option>
+<option value=2>2. साङ्ख्ययोगः</option>
+<option value=3>3. कर्मयोगः</option>
+<option value=4>4. ज्ञानकर्मसंन्यासयोगः</option>
+<option value=5>5. संन्यासयोगः</option>
+<option value=6>6. आत्मसंयमयोगः</option>
+<option value=7>7. ज्ञानविज्ञानयोगः</option>
+<option value=8>8. अक्षरब्रह्मयोगः</option>
+<option value=9>9. राजविद्याराजगुह्ययोगः</option>
+<option value=10>10. विभूतियोगः</option>
+<option value=11>11. विश्वरूपदर्शनयोगः</option>
+<option value=12>12. भक्तियोगः</option>
+<option value=13>13. क्षेत्रक्षेत्रज्ञविभागयोगः</option>
+<option value=14>14. गुणत्रयविभागयोगः</option>
+<option value=15>15. पुरुषोत्तमयोगः</option>
+<option value=16>16. दैवासुरसम्पद्विभागयोगः</option>
+<option value=17>17. श्रद्धात्रयविभागयोगः</option>
+<option value=18>18. मोक्षसंन्यासयोगः</option>
+</select>
+<strong>श्लोकः &nbsp;</strong>
+<select id=select_verse name=select_verse onchange=verse_change() style=font-size:medium></select>
+<div id=wait style=display:table;margin-right:auto;margin-left:auto>
+<br /><br /><br /><br /><br /><br />
+Please wait ...
+</div>
+</form>
+</nav>
+<div class=reveal>
+<div class=slides>
+<section id=link_chapter9></section>
+<section id=gita_10-1>
+<div id=gita_sa_10-1>
+<strong>
+श्रीभगवानुवाच |<br />
+भूय एव महाबाहो शृणु मे परमं वचः |<br />
+यत्तेऽहं प्रीयमाणाय वक्ष्यामि हितकाम्यया ||१०-१||<br />
+</strong>
+</div>
+<div id=gita_tr_10-1>
+<em>
+śrībhagavānuvāca .<br />
+bhūya eva mahābāho śṛṇu me paramaṃ vacaḥ .<br />
+yatte.ahaṃ prīyamāṇāya vakṣyāmi hitakāmyayā ..10-1..<br />
+</em>
+</div>
+<div id=gita_en_10-1>
+The Blessed Lord said:<br>
+1. Again, O mighty-armed, listen to My Supreme word; which I, wishing our welfare, will
+declare to you, who delight in hearing me.
+<br />
+</div>
+</section>
+<section id=gita_10-2>
+<div id=gita_sa_10-2>
+<strong>
+न मे विदुः सुरगणाः प्रभवं न महर्षयः |<br />
+अहमादिर्हि देवानां महर्षीणां च सर्वशः ||१०-२||<br />
+</strong>
+</div>
+<div id=gita_tr_10-2>
+<em>
+na me viduḥ suragaṇāḥ prabhavaṃ na maharṣayaḥ .<br />
+ahamādirhi devānāṃ maharṣīṇāṃ ca sarvaśaḥ ..10-2..<br />
+</em>
+</div>
+<div id=gita_en_10-2>
+2. Neither the hosts of heaven, nor great RISHIS know My origin; for, in every way, I am
+the source of all the DEVAS and the RISHIS.
+<br />
+</div>
+</section>
+<section id=gita_10-3>
+<div id=gita_sa_10-3>
+<strong>
+यो मामजमनादिं च वेत्ति लोकमहेश्वरम् |<br />
+असम्मूढः स मर्त्येषु सर्वपापैः प्रमुच्यते ||१०-३||<br />
+</strong>
+</div>
+<div id=gita_tr_10-3>
+<em>
+yo māmajamanādiṃ ca vetti lokamaheśvaram .<br />
+asammūḍhaḥ sa martyeṣu sarvapāpaiḥ pramucyate ..10-3..<br />
+</em>
+</div>
+<div id=gita_en_10-3>
+3. He who amongst the mortals, knows Me as unborn and beginningless, as the great
+Lord of the worlds, is undeluded and is liberated from all sins.
+<br />
+</div>
+</section>
+<section id=gita_10-4>
+<div id=gita_sa_10-4>
+<strong>
+बुद्धिर्ज्ञानमसम्मोहः क्षमा सत्यं दमः शमः |<br />
+सुखं दुःखं भवोऽभावो भयं चाभयमेव च ||१०-४||<br />
+</strong>
+</div>
+<div id=gita_tr_10-4>
+<em>
+buddhirjñānamasammohaḥ kṣamā satyaṃ damaḥ śamaḥ .<br />
+sukhaṃ duḥkhaṃ bhavo.abhāvo bhayaṃ cābhayameva ca ..10-4..<br />
+</em>
+</div>
+<div id=gita_en_10-4>
+4. Intellect, wisdom, non-delusion, forgiveness, truth, self-restraint, calmness, happiness,
+pain, birth or death, fear and also fearlessness, . . .
+<br />
+</div>
+</section>
+<section id=gita_10-5>
+<div id=gita_sa_10-5>
+<strong>
+अहिंसा समता तुष्टिस्तपो दानं यशोऽयशः |<br />
+भवन्ति भावा भूतानां मत्त एव पृथग्विधाः ||१०-५||<br />
+</strong>
+</div>
+<div id=gita_tr_10-5>
+<em>
+ahiṃsā samatā tuṣṭistapo dānaṃ yaśo.ayaśaḥ .<br />
+bhavanti bhāvā bhūtānāṃ matta eva pṛthagvidhāḥ ..10-5..<br />
+</em>
+</div>
+<div id=gita_en_10-5>
+5. Non-injury, equanimity, contentment, austerity, beneficence, fame, infamy --- all these
+different kinds of "qualities-of-beings" arise from Me alone.
+<br />
+</div>
+</section>
+<section id=gita_10-6>
+<div id=gita_sa_10-6>
+<strong>
+महर्षयः सप्त पूर्वे चत्वारो मनवस्तथा |<br />
+मद्भावा मानसा जाता येषां लोक इमाः प्रजाः ||१०-६||<br />
+</strong>
+</div>
+<div id=gita_tr_10-6>
+<em>
+maharṣayaḥ sapta pūrve catvāro manavastathā .<br />
+madbhāvā mānasā jātā yeṣāṃ loka imāḥ prajāḥ ..10-6..<br />
+</em>
+</div>
+<div id=gita_en_10-6>
+6. The seven great RISHIS, the ancient four and also the MANUS, possessed of powers
+like Me, were born of (My) mind; from them are these creatures in the world (originated
+and sustained) .
+<br />
+</div>
+</section>
+<section id=gita_10-7>
+<div id=gita_sa_10-7>
+<strong>
+एतां विभूतिं योगं च मम यो वेत्ति तत्त्वतः |<br />
+सोऽविकम्पेन योगेन युज्यते नात्र संशयः ||१०-७||<br />
+</strong>
+</div>
+<div id=gita_tr_10-7>
+<em>
+etāṃ vibhūtiṃ yogaṃ ca mama yo vetti tattvataḥ .<br />
+so.avikampena yogena yujyate nātra saṃśayaḥ ..10-7..<br />
+</em>
+</div>
+<div id=gita_en_10-7>
+7. He, who in truth knows these manifold manifestations of My being (Macrocosm) , and
+(this) YOGA -power of Mine (Microcosm) , becomes established in the "tremorless -
+YOGA " ; there is no doubt about it.
+<br />
+</div>
+</section>
+<section id=gita_10-8>
+<div id=gita_sa_10-8>
+<strong>
+अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते |<br />
+इति मत्वा भजन्ते मां बुधा भावसमन्विताः ||१०-८||<br />
+</strong>
+</div>
+<div id=gita_tr_10-8>
+<em>
+ahaṃ sarvasya prabhavo mattaḥ sarvaṃ pravartate .<br />
+iti matvā bhajante māṃ budhā bhāvasamanvitāḥ ..10-8..<br />
+</em>
+</div>
+<div id=gita_en_10-8>
+8. I am the Source of All; from Me everything evolves; understanding thus, the "wise, "
+endowed with 'loving consciousness' worship Me.
+<br />
+</div>
+</section>
+<section id=gita_10-9>
+<div id=gita_sa_10-9>
+<strong>
+मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम् |<br />
+कथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च ||१०-९||<br />
+</strong>
+</div>
+<div id=gita_tr_10-9>
+<em>
+maccittā madgataprāṇā bodhayantaḥ parasparam .<br />
+kathayantaśca māṃ nityaṃ tuṣyanti ca ramanti ca ..10-9..<br />
+</em>
+</div>
+<div id=gita_en_10-9>
+9. With their minds wholly resting in Me, with their senses absorbed in Me, enlightening
+one another, and ever speaking of Me, they are satisfied and delighted.
+<br />
+</div>
+</section>
+<section id=gita_10-10>
+<div id=gita_sa_10-10>
+<strong>
+तेषां सततयुक्तानां भजतां प्रीतिपूर्वकम् |<br />
+ददामि बुद्धियोगं तं येन मामुपयान्ति ते ||१०-१०||<br />
+</strong>
+</div>
+<div id=gita_tr_10-10>
+<em>
+teṣāṃ satatayuktānāṃ bhajatāṃ prītipūrvakam .<br />
+dadāmi buddhiyogaṃ taṃ yena māmupayānti te ..10-10..<br />
+</em>
+</div>
+<div id=gita_en_10-10>
+10. To the ever-steadfast, worshipping Me with love, I give the "BUDDHI YOGA, " by
+which they come to Me.
+<br />
+</div>
+</section>
+<section id=gita_10-11>
+<div id=gita_sa_10-11>
+<strong>
+तेषामेवानुकम्पार्थमहमज्ञानजं तमः |<br />
+नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता ||१०-११||<br />
+</strong>
+</div>
+<div id=gita_tr_10-11>
+<em>
+teṣāmevānukampārthamahamajñānajaṃ tamaḥ .<br />
+nāśayāmyātmabhāvastho jñānadīpena bhāsvatā ..10-11..<br />
+</em>
+</div>
+<div id=gita_en_10-11>
+11. Out of mere compassion for them, I, dwelling within their hearts, destroy the darkness
+born of ignorance by the luminous Lamp-of-Knowledge.
+<br />
+</div>
+</section>
+<section id=gita_10-12>
+<div id=gita_sa_10-12>
+<strong>
+अर्जुन उवाच |<br />
+परं ब्रह्म परं धाम पवित्रं परमं भवान् |<br />
+पुरुषं शाश्वतं दिव्यमादिदेवमजं विभुम् ||१०-१२||<br />
+</strong>
+</div>
+<div id=gita_tr_10-12>
+<em>
+arjuna uvāca .<br />
+paraṃ brahma paraṃ dhāma pavitraṃ paramaṃ bhavān .<br />
+puruṣaṃ śāśvataṃ divyamādidevamajaṃ vibhum ..10-12..<br />
+</em>
+</div>
+<div id=gita_en_10-12>
+Arjuna said:<br>
+12. You are the Supreme BRAHMAN, the Supreme Abode, the Supreme Purifier, Eternal,
+Divine PURUSHA, the God of all gods, Unborn, Omnipresent.
+<br />
+</div>
+</section>
+<section id=gita_10-13>
+<div id=gita_sa_10-13>
+<strong>
+आहुस्त्वामृषयः सर्वे देवर्षिर्नारदस्तथा |<br />
+असितो देवलो व्यासः स्वयं चैव ब्रवीषि मे ||१०-१३||<br />
+</strong>
+</div>
+<div id=gita_tr_10-13>
+<em>
+āhustvāmṛṣayaḥ sarve devarṣirnāradastathā .<br />
+asito devalo vyāsaḥ svayaṃ caiva bravīṣi me ..10-13..<br />
+</em>
+</div>
+<div id=gita_en_10-13>
+13. All the RISHIS have thus declared You, as also the DEVA-RISHI Narada, so also
+Asita, Devala and Vyasa; and now the same You Yourself say to me.
+<br />
+</div>
+</section>
+<section id=gita_10-14>
+<div id=gita_sa_10-14>
+<strong>
+सर्वमेतदृतं मन्ये यन्मां वदसि केशव |<br />
+न हि ते भगवन्व्यक्तिं विदुर्देवा न दानवाः ||१०-१४||<br />
+</strong>
+</div>
+<div id=gita_tr_10-14>
+<em>
+sarvametadṛtaṃ manye yanmāṃ vadasi keśava .<br />
+na hi te bhagavanvyaktiṃ vidurdevā na dānavāḥ ..10-14..<br />
+</em>
+</div>
+<div id=gita_en_10-14>
+14. I believe all this that You say to me as true, O Keshava; verily, O Blessed Lord,
+neither the DEVAS nor the DANAVAS know Your manifestation (identity) .
+<br />
+</div>
+</section>
+<section id=gita_10-15>
+<div id=gita_sa_10-15>
+<strong>
+स्वयमेवात्मनात्मानं वेत्थ त्वं पुरुषोत्तम |<br />
+भूतभावन भूतेश देवदेव जगत्पते ||१०-१५||<br />
+</strong>
+</div>
+<div id=gita_tr_10-15>
+<em>
+svayamevātmanātmānaṃ vettha tvaṃ puruṣottama .<br />
+bhūtabhāvana bhūteśa devadeva jagatpate ..10-15..<br />
+</em>
+</div>
+<div id=gita_en_10-15>
+15. Verily, You Yourself know Yourself by Yourself, O PURUSHOTTAMA (Supreme
+PURUSHA) , O Source of beings, O Lord of beings, O God of gods, O Ruler of the world.
+<br />
+</div>
+</section>
+<section id=gita_10-16>
+<div id=gita_sa_10-16>
+<strong>
+वक्तुमर्हस्यशेषेण दिव्या ह्यात्मविभूतयः |<br />
+याभिर्विभूतिभिर्लोकानिमांस्त्वं व्याप्य तिष्ठसि ||१०-१६||<br />
+</strong>
+</div>
+<div id=gita_tr_10-16>
+<em>
+vaktumarhasyaśeṣeṇa divyā hyātmavibhūtayaḥ .<br />
+yābhirvibhūtibhirlokānimāṃstvaṃ vyāpya tiṣṭhasi ..10-16..<br />
+</em>
+</div>
+<div id=gita_en_10-16>
+16. You should indeed, without reserve, tell me of Your Divine glories by which You exist
+pervading all these worlds.
+<br />
+</div>
+</section>
+<section id=gita_10-17>
+<div id=gita_sa_10-17>
+<strong>
+कथं विद्यामहं योगिंस्त्वां सदा परिचिन्तयन् |<br />
+केषु केषु च भावेषु चिन्त्योऽसि भगवन्मया ||१०-१७||<br />
+</strong>
+</div>
+<div id=gita_tr_10-17>
+<em>
+kathaṃ vidyāmahaṃ yogiṃstvāṃ sadā paricintayan .<br />
+keṣu keṣu ca bhāveṣu cintyo.asi bhagavanmayā ..10-17..<br />
+</em>
+</div>
+<div id=gita_en_10-17>
+17. How shall I, ever-meditating, know You, O YOGIN? In what aspects or things, O
+Blessed Lord, are You to be thought of by me?
+<br />
+</div>
+</section>
+<section id=gita_10-18>
+<div id=gita_sa_10-18>
+<strong>
+विस्तरेणात्मनो योगं विभूतिं च जनार्दन |<br />
+भूयः कथय तृप्तिर्हि शृण्वतो नास्ति मेऽमृतम् ||१०-१८||<br />
+</strong>
+</div>
+<div id=gita_tr_10-18>
+<em>
+vistareṇātmano yogaṃ vibhūtiṃ ca janārdana .<br />
+bhūyaḥ kathaya tṛptirhi śṛṇvato nāsti me.amṛtam ..10-18..<br />
+</em>
+</div>
+<div id=gita_en_10-18>
+18. Tell me again, in detail, O Janardana, of your YOGA -power and Immanent glory;
+for I do not feel satisfied by hearing your (life-giving and so) nectar-like speech.
+<br />
+</div>
+</section>
+<section id=gita_10-19>
+<div id=gita_sa_10-19>
+<strong>
+श्रीभगवानुवाच |<br />
+हन्त ते कथयिष्यामि दिव्या ह्यात्मविभूतयः |<br />
+प्राधान्यतः कुरुश्रेष्ठ नास्त्यन्तो विस्तरस्य मे ||१०-१९||<br />
+</strong>
+</div>
+<div id=gita_tr_10-19>
+<em>
+śrībhagavānuvāca .<br />
+hanta te kathayiṣyāmi divyā hyātmavibhūtayaḥ .<br />
+prādhānyataḥ kuruśreṣṭha nāstyanto vistarasya me ..10-19..<br />
+</em>
+</div>
+<div id=gita_en_10-19>
+The Blessed Lord said:<br>
+19. Alas! Now I will declare to you My Divine glories, immanent, in their prominence; O
+best of the Kurus, there is no end to the details of My extent.
+<br />
+</div>
+</section>
+<section id=gita_10-20>
+<div id=gita_sa_10-20>
+<strong>
+अहमात्मा गुडाकेश सर्वभूताशयस्थितः |<br />
+अहमादिश्च मध्यं च भूतानामन्त एव च ||१०-२०||<br />
+</strong>
+</div>
+<div id=gita_tr_10-20>
+<em>
+ahamātmā guḍākeśa sarvabhūtāśayasthitaḥ .<br />
+ahamādiśca madhyaṃ ca bhūtānāmanta eva ca ..10-20..<br />
+</em>
+</div>
+<div id=gita_en_10-20>
+20. I am the Self, O Gudakesha, seated in the hearts of all beings; I am the Beginning, the
+Middle and also the End of all beings.
+<br />
+</div>
+</section>
+<section id=gita_10-21>
+<div id=gita_sa_10-21>
+<strong>
+आदित्यानामहं विष्णुर्ज्योतिषां रविरंशुमान् |<br />
+मरीचिर्मरुतामस्मि नक्षत्राणामहं शशी ||१०-२१||<br />
+</strong>
+</div>
+<div id=gita_tr_10-21>
+<em>
+ādityānāmahaṃ viṣṇurjyotiṣāṃ raviraṃśumān .<br />
+marīcirmarutāmasmi nakṣatrāṇāmahaṃ śaśī ..10-21..<br />
+</em>
+</div>
+<div id=gita_en_10-21>
+21. Among the (twelve) ADITYAS I am Vishnu; among luminaries, the radiant Sun; I am
+Marichi among the MARUTS; among asterisms, the moon am I.
+<br />
+</div>
+</section>
+<section id=gita_10-22>
+<div id=gita_sa_10-22>
+<strong>
+वेदानां सामवेदोऽस्मि देवानामस्मि वासवः |<br />
+इन्द्रियाणां मनश्चास्मि भूतानामस्मि चेतना ||१०-२२||<br />
+</strong>
+</div>
+<div id=gita_tr_10-22>
+<em>
+vedānāṃ sāmavedo.asmi devānāmasmi vāsavaḥ .<br />
+indriyāṇāṃ manaścāsmi bhūtānāmasmi cetanā ..10-22..<br />
+</em>
+</div>
+<div id=gita_en_10-22>
+22. Among the VEDAS, I am the SAMA-VEDA; I am VASAVA among the gods; among
+the senses I am the mind; and I am the intelligence among living beings.
+<br />
+</div>
+</section>
+<section id=gita_10-23>
+<div id=gita_sa_10-23>
+<strong>
+रुद्राणां शङ्करश्चास्मि वित्तेशो यक्षरक्षसाम् |<br />
+वसूनां पावकश्चास्मि मेरुः शिखरिणामहम् ||१०-२३||<br />
+</strong>
+</div>
+<div id=gita_tr_10-23>
+<em>
+rudrāṇāṃ śaṅkaraścāsmi vitteśo yakṣarakṣasām .<br />
+vasūnāṃ pāvakaścāsmi meruḥ śikhariṇāmaham ..10-23..<br />
+</em>
+</div>
+<div id=gita_en_10-23>
+23. And among the RUDRAS I am Shankara; among the YAKSHAS and RAKSHASAS I
+am the Lord of wealth (KUBERA) ; among the VASUS I am PAVAKA (AGNI) ; and
+among the mountains I am the MERU.
+<br />
+</div>
+</section>
+<section id=gita_10-24>
+<div id=gita_sa_10-24>
+<strong>
+पुरोधसां च मुख्यं मां विद्धि पार्थ बृहस्पतिम् |<br />
+सेनानीनामहं स्कन्दः सरसामस्मि सागरः ||१०-२४||<br />
+</strong>
+</div>
+<div id=gita_tr_10-24>
+<em>
+purodhasāṃ ca mukhyaṃ māṃ viddhi pārtha bṛhaspatim .<br />
+senānīnāmahaṃ skandaḥ sarasāmasmi sāgaraḥ ..10-24..<br />
+</em>
+</div>
+<div id=gita_en_10-24>
+24. And among the household priests, O Partha, know Me to be the chief, BRIHASPATI;
+among generals, I am SKANDA; among lakes, I am the ocean.
+<br />
+</div>
+</section>
+<section id=gita_10-25>
+<div id=gita_sa_10-25>
+<strong>
+महर्षीणां भृगुरहं गिरामस्म्येकमक्षरम् |<br />
+यज्ञानां जपयज्ञोऽस्मि स्थावराणां हिमालयः ||१०-२५||<br />
+</strong>
+</div>
+<div id=gita_tr_10-25>
+<em>
+maharṣīṇāṃ bhṛgurahaṃ girāmasmyekamakṣaram .<br />
+yajñānāṃ japayajño.asmi sthāvarāṇāṃ himālayaḥ ..10-25..<br />
+</em>
+</div>
+<div id=gita_en_10-25>
+25. Among the great RISHIS I am Bhrigu; among words I am the one-syllabled "OM" ;
+among sacrifices I am the sacrifice of silent repetition (JAPA-YAJNA) ; among
+immovable things, the Himalayas.
+<br />
+</div>
+</section>
+<section id=gita_10-26>
+<div id=gita_sa_10-26>
+<strong>
+अश्वत्थः सर्ववृक्षाणां देवर्षीणां च नारदः |<br />
+गन्धर्वाणां चित्ररथः सिद्धानां कपिलो मुनिः ||१०-२६||<br />
+</strong>
+</div>
+<div id=gita_tr_10-26>
+<em>
+aśvatthaḥ sarvavṛkṣāṇāṃ devarṣīṇāṃ ca nāradaḥ .<br />
+gandharvāṇāṃ citrarathaḥ siddhānāṃ kapilo muniḥ ..10-26..<br />
+</em>
+</div>
+<div id=gita_en_10-26>
+26. Among all trees (I am) the ASHWATTHA -tree; among Divine RISHIS , Narada ;
+among GANDHARVAS , Chitraratha ; among Perfected ones , the MUNI Kapila .
+<br />
+</div>
+</section>
+<section id=gita_10-27>
+<div id=gita_sa_10-27>
+<strong>
+उच्चैःश्रवसमश्वानां विद्धि माममृतोद्भवम् |<br />
+ऐरावतं गजेन्द्राणां नराणां च नराधिपम् ||१०-२७||<br />
+</strong>
+</div>
+<div id=gita_tr_10-27>
+<em>
+uccaiḥśravasamaśvānāṃ viddhi māmamṛtodbhavam .<br />
+airāvataṃ gajendrāṇāṃ narāṇāṃ ca narādhipam ..10-27..<br />
+</em>
+</div>
+<div id=gita_en_10-27>
+27. Know Me among horses as 'UCCHAHI-SHRAVAS', born of AMRITA; among lordly
+elephants, the 'AIRAVATA' and among men, the King.
+<br />
+</div>
+</section>
+<section id=gita_10-28>
+<div id=gita_sa_10-28>
+<strong>
+आयुधानामहं वज्रं धेनूनामस्मि कामधुक् |<br />
+प्रजनश्चास्मि कन्दर्पः सर्पाणामस्मि वासुकिः ||१०-२८||<br />
+</strong>
+</div>
+<div id=gita_tr_10-28>
+<em>
+āyudhānāmahaṃ vajraṃ dhenūnāmasmi kāmadhuk .<br />
+prajanaścāsmi kandarpaḥ sarpāṇāmasmi vāsukiḥ ..10-28..<br />
+</em>
+</div>
+<div id=gita_en_10-28>
+28. Among weapons, I'am the thunderbolt (VAJRA); among cows I'm KAMADHUK; I'am KANDARPA, the cause of offspring; among serpents I'am VASUKI.<br />
+</div>
+</section>
+<section id=gita_10-29>
+<div id=gita_sa_10-29>
+<strong>
+अनन्तश्चास्मि नागानां वरुणो यादसामहम् |<br />
+पितॄणामर्यमा चास्मि यमः संयमतामहम् ||१०-२९||<br />
+</strong>
+</div>
+<div id=gita_tr_10-29>
+<em>
+anantaścāsmi nāgānāṃ varuṇo yādasāmaham .<br />
+pitṝṇāmaryamā cāsmi yamaḥ saṃyamatāmaham ..10-29..<br />
+</em>
+</div>
+<div id=gita_en_10-29>
+29. I am 'ANANTA' among NAGAS; I am 'VARUNA' among water deities; I am
+'ARYAMA' among the ancestors; and I am 'YAMA' among controllers.
+<br />
+</div>
+</section>
+<section id=gita_10-30>
+<div id=gita_sa_10-30>
+<strong>
+प्रह्लादश्चास्मि दैत्यानां कालः कलयतामहम् |<br />
+मृगाणां च मृगेन्द्रोऽहं वैनतेयश्च पक्षिणाम् ||१०-३०||<br />
+</strong>
+</div>
+<div id=gita_tr_10-30>
+<em>
+prahlādaścāsmi daityānāṃ kālaḥ kalayatāmaham .<br />
+mṛgāṇāṃ ca mṛgendro.ahaṃ vainateyaśca pakṣiṇām ..10-30..<br />
+</em>
+</div>
+<div id=gita_en_10-30>
+30. I am 'Prahlada' among DAITYAS, 'Time' among reckoners, the 'Lord-of-beasts'
+(Lion) among animals, and 'Vainateya' (Garuda) among birds.
+<br />
+</div>
+</section>
+<section id=gita_10-31>
+<div id=gita_sa_10-31>
+<strong>
+पवनः पवतामस्मि रामः शस्त्रभृतामहम् |<br />
+झषाणां मकरश्चास्मि स्रोतसामस्मि जाह्नवी ||१०-३१||<br />
+</strong>
+</div>
+<div id=gita_tr_10-31>
+<em>
+pavanaḥ pavatāmasmi rāmaḥ śastrabhṛtāmaham .<br />
+jhaṣāṇāṃ makaraścāsmi srotasāmasmi jāhnavī ..10-31..<br />
+</em>
+</div>
+<div id=gita_en_10-31>
+31. Among purifiers, I am the 'wind' ; among warriors, I am 'Rama, ' among fishes, I am
+the 'shark' ; among rivers, I am the 'Ganges. '
+<br />
+</div>
+</section>
+<section id=gita_10-32>
+<div id=gita_sa_10-32>
+<strong>
+सर्गाणामादिरन्तश्च मध्यं चैवाहमर्जुन |<br />
+अध्यात्मविद्या विद्यानां वादः प्रवदतामहम् ||१०-३२||<br />
+</strong>
+</div>
+<div id=gita_tr_10-32>
+<em>
+sargāṇāmādirantaśca madhyaṃ caivāhamarjuna .<br />
+adhyātmavidyā vidyānāṃ vādaḥ pravadatāmaham ..10-32..<br />
+</em>
+</div>
+<div id=gita_en_10-32>
+32. Among creations, I am the beginning, the middle and also the end, O Arjuna; among
+sciences I am the Science of the Self and I am the logic in all arguments.
+<br />
+</div>
+</section>
+<section id=gita_10-33>
+<div id=gita_sa_10-33>
+<strong>
+अक्षराणामकारोऽस्मि द्वन्द्वः सामासिकस्य च |<br />
+अहमेवाक्षयः कालो धाताहं विश्वतोमुखः ||१०-३३||<br />
+</strong>
+</div>
+<div id=gita_tr_10-33>
+<em>
+akṣarāṇāmakāro.asmi dvandvaḥ sāmāsikasya ca .<br />
+ahamevākṣayaḥ kālo dhātāhaṃ viśvatomukhaḥ ..10-33..<br />
+</em>
+</div>
+<div id=gita_en_10-33>
+33. Among letters I am the letter 'A' ; among all compounds I am the dual (co-ordinates) ;
+I am verily, the inexhaustible, or the everlasting time; I am the (All-faced) dispenser (of
+fruits of actions) having faces in all directions.
+<br />
+</div>
+</section>
+<section id=gita_10-34>
+<div id=gita_sa_10-34>
+<strong>
+मृत्युः सर्वहरश्चाहमुद्भवश्च भविष्यताम् |<br />
+कीर्तिः श्रीर्वाक्च नारीणां स्मृतिर्मेधा धृतिः क्षमा ||१०-३४||<br />
+</strong>
+</div>
+<div id=gita_tr_10-34>
+<em>
+mṛtyuḥ sarvaharaścāhamudbhavaśca bhaviṣyatām .<br />
+kīrtiḥ śrīrvākca nārīṇāṃ smṛtirmedhā dhṛtiḥ kṣamā ..10-34..<br />
+</em>
+</div>
+<div id=gita_en_10-34>
+34. And I am all-devouring Death, and the prosperity of those who are to be prosperous;
+among the feminine qualities (I am) fame, prosperity, speech, memory, intelligence,
+firmness and forgiveness.
+<br />
+</div>
+</section>
+<section id=gita_10-35>
+<div id=gita_sa_10-35>
+<strong>
+बृहत्साम तथा साम्नां गायत्री छन्दसामहम् |<br />
+मासानां मार्गशीर्षोऽहमृतूनां कुसुमाकरः ||१०-३५||<br />
+</strong>
+</div>
+<div id=gita_tr_10-35>
+<em>
+bṛhatsāma tathā sāmnāṃ gāyatrī chandasāmaham .<br />
+māsānāṃ mārgaśīrṣo.ahamṛtūnāṃ kusumākaraḥ ..10-35..<br />
+</em>
+</div>
+<div id=gita_en_10-35>
+35. Among hymns also I am the 'BRIHAT-SAMAN' ; among metres 'GAYATRI' am I;
+among months I am parts of December-January (MARGA-SHIRSHA) ; among seasons I
+am the 'flowery-spring. '
+<br />
+</div>
+</section>
+<section id=gita_10-36>
+<div id=gita_sa_10-36>
+<strong>
+द्यूतं छलयतामस्मि तेजस्तेजस्विनामहम् |<br />
+जयोऽस्मि व्यवसायोऽस्मि सत्त्वं सत्त्ववतामहम् ||१०-३६||<br />
+</strong>
+</div>
+<div id=gita_tr_10-36>
+<em>
+dyūtaṃ chalayatāmasmi tejastejasvināmaham .<br />
+jayo.asmi vyavasāyo.asmi sattvaṃ sattvavatāmaham ..10-36..<br />
+</em>
+</div>
+<div id=gita_en_10-36>
+36. I am the gambling of the fraudulent; I am the splendour of the splendid; I am victory;
+I am the industry (in those who are determined) ; I am the goodness in
+the good.
+<br />
+</div>
+</section>
+<section id=gita_10-37>
+<div id=gita_sa_10-37>
+<strong>
+वृष्णीनां वासुदेवोऽस्मि पाण्डवानां धनञ्जयः |<br />
+मुनीनामप्यहं व्यासः कवीनामुशना कविः ||१०-३७||<br />
+</strong>
+</div>
+<div id=gita_tr_10-37>
+<em>
+vṛṣṇīnāṃ vāsudevo.asmi pāṇḍavānāṃ dhanañjayaḥ .<br />
+munīnāmapyahaṃ vyāsaḥ kavīnāmuśanā kaviḥ ..10-37..<br />
+</em>
+</div>
+<div id=gita_en_10-37>
+37. Among the VRISHNIS I am 'VAASUDEVA' ; among the PANDAVAS, (I am)
+'DHANANJAYA' ; also among the MUNIS I am 'VYASA' ; and among the poets I am
+'USHANA, ' the great Seer.
+<br />
+</div>
+</section>
+<section id=gita_10-38>
+<div id=gita_sa_10-38>
+<strong>
+दण्डो दमयतामस्मि नीतिरस्मि जिगीषताम् |<br />
+मौनं चैवास्मि गुह्यानां ज्ञानं ज्ञानवतामहम् ||१०-३८||<br />
+</strong>
+</div>
+<div id=gita_tr_10-38>
+<em>
+daṇḍo damayatāmasmi nītirasmi jigīṣatām .<br />
+maunaṃ caivāsmi guhyānāṃ jñānaṃ jñānavatāmaham ..10-38..<br />
+</em>
+</div>
+<div id=gita_en_10-38>
+38. Among punishers I am the 'Sceptre' ; among those who seek victory, I am
+'Statesmanship' ; and also among secrets, I am 'Silence' ; and I am the 'Knowledge'
+among knowers.
+<br />
+</div>
+</section>
+<section id=gita_10-39>
+<div id=gita_sa_10-39>
+<strong>
+यच्चापि सर्वभूतानां बीजं तदहमर्जुन |<br />
+न तदस्ति विना यत्स्यान्मया भूतं चराचरम् ||१०-३९||<br />
+</strong>
+</div>
+<div id=gita_tr_10-39>
+<em>
+yaccāpi sarvabhūtānāṃ bījaṃ tadahamarjuna .<br />
+na tadasti vinā yatsyānmayā bhūtaṃ carācaram ..10-39..<br />
+</em>
+</div>
+<div id=gita_en_10-39>
+39. And whatsoever is the seed of all beings, that also am I, O Arjuna; there is no being,
+whether moving, or unmoving, that can exist without Me.
+<br />
+</div>
+</section>
+<section id=gita_10-40>
+<div id=gita_sa_10-40>
+<strong>
+नान्तोऽस्ति मम दिव्यानां विभूतीनां परन्तप |<br />
+एष तूद्देशतः प्रोक्तो विभूतेर्विस्तरो मया ||१०-४०||<br />
+</strong>
+</div>
+<div id=gita_tr_10-40>
+<em>
+nānto.asti mama divyānāṃ vibhūtīnāṃ parantapa .<br />
+eṣa tūddeśataḥ prokto vibhūtervistaro mayā ..10-40..<br />
+</em>
+</div>
+<div id=gita_en_10-40>
+40. There is no end to My Divine Glories, O Parantapa; but, this is but a brief statement
+by Me of the particulars of My Divine Glories.
+<br />
+</div>
+</section>
+<section id=gita_10-41>
+<div id=gita_sa_10-41>
+<strong>
+यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा |<br />
+तत्तदेवावगच्छ त्वं मम तेजोंऽशसम्भवम् ||१०-४१||<br />
+</strong>
+</div>
+<div id=gita_tr_10-41>
+<em>
+yadyadvibhūtimatsattvaṃ śrīmadūrjitameva vā .<br />
+tattadevāvagaccha tvaṃ mama tejoṃśasambhavam ..10-41..<br />
+</em>
+</div>
+<div id=gita_en_10-41>
+41. Whatever it is that is glorious, prosperous or powerful in any being, know that to be a manifestation of a part of My splendour.
+<br />
+</div>
+</section>
+<section id=gita_10-42>
+<div id=gita_sa_10-42>
+<strong>
+अथवा बहुनैतेन किं ज्ञातेन तवार्जुन |<br />
+विष्टभ्याहमिदं कृत्स्नमेकांशेन स्थितो जगत् ||१०-४२||<br />
+</strong>
+</div>
+<div id=gita_tr_10-42>
+<em>
+athavā bahunaitena kiṃ jñātena tavārjuna .<br />
+viṣṭabhyāhamidaṃ kṛtsnamekāṃśena sthito jagat ..10-42..<br />
+</em>
+</div>
+<div id=gita_en_10-42>
+42. But, of what avail to thee is the knowledge of all these details, O Arjuna? I exist,
+supporting this whole world by one part of Myself.
+<br />
+</div>
+</section>
+<section id=gita_10-43>
+<div id=gita_sa_10-43>
+<strong>
+ॐ तत्सदिति श्रीमद्भगवद्गीतासूपनिषत्सु<br />
+ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे<br />
+विभूतियोगो नाम दशमोऽध्यायः ||१०||<br />
+</strong>
+</div>
+<div id=gita_tr_10-43>
+<em>
+OM tatsaditi śrīmadbhagavadgītāsūpaniṣatsu brahmavidyāyāṃ yogaśāstre śrīkṛṣṇārjunasaṃvāde vibhūtiyogo nāma daśamo.adhyāyaḥ ..10-43..<br />
+</em>
+</div>
+<div id=gita_en_10-43>
+Thus, in the UPANISHADS of the glorious Bhagawad-Geeta, in the Science of the
+Eternal, in the scripture of YOGA , in the dialogue between Sri Krishna and Arjuna, the
+tenth discourse ends entitled:<br>
+THE YOGA OF DIVINE GLORIES<br />
+</div>
+</section>
+<section id=link_chapter11></section>
+</div>
+</div>
+<footer>
+<form style=position:absolute;left:5px;bottom:5px;z-index:100>
+<small><strong>सं</strong></small>
+<input id=sa_visible type=button value=ON style=height:30px onclick=toggle(this) />
+<small>EN:</small>
+<input id=en_visible type=button value=ON style=height:30px onclick=toggle(this) />
+<small>TR:</small>
+<input id=tr_visible type=button value=ON style=height:30px onclick=toggle(this) />
+&nbsp;
+<small>AU:</small>
+<input id=au_audible type=button value=OFF style=height:30px onclick=toggle_audio(this) />
+&nbsp;
+<input id=previous_verse type=button value="<" style=width:25px;height:35px onclick=Reveal.left();this.blur() />
+<input id=next_verse type=button value=">" style=width:25px;height:35px onclick=Reveal.right();this.blur() />
+</form>
+</footer>
+<script src=cordova.js></script>
+<script src=lib/js/head.min.js></script>
+<script src=js/reveal.min.js></script>
+<script src=js/gita.js></script>
+<p id="chapter" hidden>10</p>
+</body>
+</html>
