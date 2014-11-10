@@ -2,18 +2,13 @@
 
 "use strict";
 
-var mainController = function ($routeParams, $http) {
-    // var this = $scope.this = {};
+var mainController = function ($routeParams, $location, backendFactory) {
     this.chapterId = $routeParams.chapterId;
     this.verseId = $routeParams.verseId;
     this.chapterText = [];
 
-    // var init = function(){
-    if (this.verseId.length === 1)
-        this.verseId = "0" + this.verseId;
-    if (this.chapterId.length === 1)
-        this.chapterId = "0" + this.chapterId;
-    // }; init();
+    this.verseId = backendFactory.padZero(this.verseId);
+    this.chapterId = backendFactory.padZero(this.chapterId);
 
     var baseAudioUrl = "data/audio/chapter" + this.chapterId + "/";
     this.verseURL = baseAudioUrl + "bvg" + this.chapterId + "v" + this.verseId + ".mp3"; //bvg02v65.mp3
@@ -21,19 +16,35 @@ var mainController = function ($routeParams, $http) {
     // var baseTextUrl = "data/text/chapter" + this.chapterId + "/";
     // this.verseText = baseTextUrl + "verse-" + this.chapterId + "-" + this.verseId + "-1.png"; //verse-01-38-1.png
 
+    // Get Verse text information, by getting chapter JSON
     var self = this;
-    $http.get("data/text/" + self.chapterId + ".json").
+    backendFactory.getChapterJSON(self.chapterId).
       success(function(data, status, headers, config) {
         self.verseText = data[self.verseId - 1] ;
       }).
       error(function(data, status, headers, config) {
         console.log("error in fetching json");
-      })
+      });
 
+      // Handle keyboard events
+      this.onKeyDown = function(event) {
+        var SPACE_KEY = 32;
+        var LEFT_ARROW = 37;
+        var RIGHT_ARROW = 39;
+
+        if (event.which == RIGHT_ARROW) { // Increment verseId and route to that page
+            $location.path("/chapter" + this.chapterId + "/verse" + backendFactory.incrementVerse(this.chapterId, this.verseId));
+        }
+        if (event.which == LEFT_ARROW) { // Decrement verseId and route to that page
+            $location.path("/chapter" + this.chapterId + "/verse" + backendFactory.decrementVerse(this.chapterId, this.verseId));
+        }
+
+
+      };
 
 };
 
-angular.module("learn2chant").controller("mainController", [ "$routeParams", "$http", mainController]);
+angular.module("learn2chant").controller("mainController", [ "$routeParams", "$location", "backendFactory", mainController]);
 
 
 

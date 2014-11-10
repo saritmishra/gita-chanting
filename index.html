@@ -10,11 +10,7 @@
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
-<body>
-
-  <div class="container-fluid red-background">
-    <ng-view/>
-  </div>
+<body ng-view ng-keydown="main.onKeyDown($event)"> <!-- keydown event is to capture arrow keys -->
 
   <script type="text/javascript" src="lib/angular.js"></script>
   <script type="text/javascript" src="lib/angular-route.js"></script>
@@ -22,6 +18,7 @@
   <script type="text/javascript" src="scripts/app.js"></script>
   <script type="text/javascript" src="scripts/controllers/mainController.js"></script>
   <script type="text/javascript" src="scripts/controllers/DropdownCtrl.js"></script>
+  <script type="text/javascript" src="scripts/services/BackendFactory.js"></script>
 
 </body>
 </html>
