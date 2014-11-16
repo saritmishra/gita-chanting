@@ -16,7 +16,7 @@ var mainController = function ($routeParams, $location, backendFactory) {
     // var baseTextUrl = "data/text/chapter" + this.chapterId + "/";
     // this.verseText = baseTextUrl + "verse-" + this.chapterId + "-" + this.verseId + "-1.png"; //verse-01-38-1.png
 
-    // Get Verse text information, by getting chapter JSON
+    // Get Verse text information
     var self = this;
     backendFactory.getChapterJSON(self.chapterId).
       success(function(data, status, headers, config) {

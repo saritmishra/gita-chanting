@@ -4,9 +4,14 @@
 
 .header-row {
     margin: 0 auto;
-    width: 330px;
-    /*color: #FFF1c0;*/
+    width: 280px;
     padding-top: 15px;
+}
+
+.verse-text {
+    margin: 0 auto;
+    width: 700px;
+    color: #FFF1c0;
 }
 
 img {

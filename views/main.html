@@ -1,8 +1,5 @@
 <div class="container-fluid red-background">
 
-  <!--   <h1>
-        Chapter: {{main.chapterId}}; Verse: {{main.verseId}}
-    </h1> -->
     <div ng-controller="DropdownCtrl as dropdown" class="header-row">
 
       <div class="btn-group" dropdown > <!-- is-open="status.isopen" -->
@@ -32,10 +29,12 @@
 
     </div>
 
-    <!-- <img ng-src="{{ main.verseText }}" alt=""> -->
-    <h1 ng-repeat="verseLine in main.verseText">
-      {{ verseLine }}
-    </h1>
+    <div class="verse-text">
+      <h1 ng-repeat="verseLine in main.verseText">
+        {{ verseLine }}
+      </h1>
+    </div>
+
     <audio loop="loop"  controls="controls"> <!-- autoplay="autoplay" -->
       <!-- <source src="music.ogg" /> -->
       <source src="{{ main.verseURL }}" />
