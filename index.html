@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
-<body class="red-background" ng-view ng-keydown="main.onKeyDown($event)" ng-swipe-left="main.goLeft()" ng-swipe-right="main.goRight()"> <!-- keydown event is to capture arrow keys -->
+<body class="red-background" ng-view ng-keydown="main.onKeyDown($event)" ng-swipe-left="main.goForward()" ng-swipe-right="main.goBackward()"> <!-- keydown event is to capture arrow keys -->
 
   <script type="text/javascript" src="lib/angular.js"></script>
   <script type="text/javascript" src="lib/angular-route.js"></script>

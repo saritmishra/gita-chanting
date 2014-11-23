@@ -40,11 +40,11 @@ var mainController = function ($routeParams, $location, backendFactory) {
 
       };
 
-      this.goLeft = function(){ // Decrement verseId and route to that page
+      this.goBackward = function(){ // Decrement verseId and route to that page
         $location.path("/chapter" + this.chapterId + "/verse" + backendFactory.decrementVerse(this.chapterId, this.verseId));
       };
 
-      this.goRight = function(){ // Increment verseId and route to that page
+      this.goForward = function(){ // Increment verseId and route to that page
         $location.path("/chapter" + this.chapterId + "/verse" + backendFactory.incrementVerse(this.chapterId, this.verseId));
       };
 };
