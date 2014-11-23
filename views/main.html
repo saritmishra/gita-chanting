@@ -1,8 +1,8 @@
 <div class="container-fluid main-window">
 
-    <div ng-controller="DropdownCtrl as dropdown" class="header-row">
+    <div ng-controller="DropdownCtrl as dropdown" class="header-row ">
 
-      <div class="btn-group" dropdown > <!-- is-open="status.isopen" -->
+      <div class="btn-group" dropdown> <!-- is-open="status.isopen" -->
         <button type="button" class="btn btn-warning dropdown-toggle"> <!-- ng-disabled="disabled" -->
             {{ dropdown.selectedChapter}} <span class="caret"></span>
         </button>
@@ -13,7 +13,7 @@
         </ul>
       </div>
 
-      <div class="btn-group" dropdown > <!-- is-open="status.isopen" -->
+      <div class="btn-group"  dropdown> <!-- is-open="status.isopen" -->
         <button type="button" class="btn btn-warning dropdown-toggle">
             {{ dropdown.selectedVerse}} <span class="caret"></span>
         </button>
