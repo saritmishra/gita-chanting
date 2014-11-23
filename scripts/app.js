@@ -2,7 +2,7 @@
 "use strict";
 
 angular
-    .module("learn2chant", ["ngRoute", "ui.bootstrap"])
+    .module("learn2chant", ["ngRoute", "ui.bootstrap", "ngTouch"])
     .config( function ( $routeProvider ) {
 
         $routeProvider

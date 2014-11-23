@@ -32,16 +32,21 @@ var mainController = function ($routeParams, $location, backendFactory) {
         var LEFT_ARROW = 37;
         var RIGHT_ARROW = 39;
 
-        if (event.which == RIGHT_ARROW) { // Increment verseId and route to that page
-            $location.path("/chapter" + this.chapterId + "/verse" + backendFactory.incrementVerse(this.chapterId, this.verseId));
-        }
-        if (event.which == LEFT_ARROW) { // Decrement verseId and route to that page
-            $location.path("/chapter" + this.chapterId + "/verse" + backendFactory.decrementVerse(this.chapterId, this.verseId));
-        }
+        if (event.which == RIGHT_ARROW)
+          this.goRight();
 
+        if (event.which == LEFT_ARROW)
+          this.goLeft();
 
       };
 
+      this.goLeft = function(){ // Decrement verseId and route to that page
+        $location.path("/chapter" + this.chapterId + "/verse" + backendFactory.decrementVerse(this.chapterId, this.verseId));
+      };
+
+      this.goRight = function(){ // Increment verseId and route to that page
+        $location.path("/chapter" + this.chapterId + "/verse" + backendFactory.incrementVerse(this.chapterId, this.verseId));
+      };
 };
 
 angular.module("learn2chant").controller("mainController", [ "$routeParams", "$location", "backendFactory", mainController]);
